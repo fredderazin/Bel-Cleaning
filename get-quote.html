@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Quote - Bel Cleaning Services</title>
+    <meta name="description" content="Request a free quote for professional commercial cleaning services. OSHA-compliant janitorial services in Missouri.">
+    <meta name="theme-color" content="#1a365d">
+    
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/css/swap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media_query.css">
+
+    <style>
+        /* ============================================
+           MOBILE OPTIMIZATIONS
+           ============================================ */
+        * {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body.menu-open {
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+        }
+
+        /* Page Loader */
+        .page-loader {
+            position: fixed;
+            inset: 0;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
+        }
+
+        .page-loader.hide {
+            display: none;
+        }
+
+        /* Animations */
+        .fade_up, .fade_down, .fade_in {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+            will-change: opacity, transform;
+        }
+
+        .fade_down {
+            transform: translateY(-16px);
+        }
+
+        .is-visible {
+            opacity: 1 !important;
+            transform: none !important;
+        }
+
+        /* Quote Form Optimization */
+        .quote-form-section {
+            padding: 60px 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px; /* Prevents iOS zoom */
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1a365d;
+            box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #1a365d 0%, #2d5a87 100%);
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(26, 54, 93, 0.3);
+        }
+
+        /* Form Row Grid */
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Sidebar Optimization */
+        .sidebar-widget {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .sidebar-widget h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #1a365d;
+        }
+
+        .sidebar-widget ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar-widget ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .sidebar-widget ul li:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-widget ul li a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .sidebar-widget ul li a:hover {
+            color: #1a365d;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .quote-form-section {
+                padding: 40px 0;
+            }
+
+            .sidebar-widget {
+                margin-top: 40px;
+            }
+
+            .heroSection h1 {
+                font-size: 32px;
+            }
+
+            .how-work-step-box {
+                grid-template-columns: 1fr;
+            }
+
+            .how-to-work-arrow {
+                display: none;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .heroSection h1 {
+                font-size: 28px;
+            }
+
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                font-size: 16px; /* Critical for iOS */
+            }
+        }
+
+        /* Success Message */
+        .success-message {
+            display: none;
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #c3e6cb;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        .error-message {
+            display: none;
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #f5c6cb;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+    </style>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GV0SLHSP6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1GV0SLHSP6');
+    </script>
+</head>
+
+<body>
+    <!-- ====================================== Preloader ===================================== -->
+    <div class="page-loader">
+        <div class="leap-frog">
+            <div class="leap-frog__dot"></div>
+            <div class="leap-frog__dot"></div>
+            <div class="leap-frog__dot"></div>
+        </div>
+    </div>
+
+    <!-- ====================================== Header (Optimized) ===================================== -->
+    <div id="site-header"></div>
+
+    <!-- ====================================== Hero Section ===================================== -->
+    <section class="heroSection">
+        <div class="container">
+            <h1 class="img-header-text fade_down">Get Your Quote</h1>
+            <div class="breadcrumb-group fade_up">
+                <a href="index.html">HOME</a> / 
+                <a href="get-quote.html">Get Your Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================== Quote Form Section ===================================== -->
+    <section class="quote-form-section">
+        <div class="container">
+            <div class="row">
+                <!-- Main Form Column -->
+                <div class="col-lg-8 col-md-12">
+                    <div class="fade_up">
+                        <h2 class="sec-text mb-4">Request Your Free Quote</h2>
+                        <p class="sec-sub-text mb-4">Fill out the form below and we'll get back to you within 24 hours with a customized quote for your cleaning needs.</p>
+                        
+                        <!-- Success/Error Messages -->
+                        <div id="successMessage" class="success-message">
+                            Thank you! Your quote request has been submitted successfully. We'll contact you within 24 hours.
+                        </div>
+                        <div id="errorMessage" class="error-message">
+                            There was an error submitting your request. Please try again or call us at (636) 389-3148.
+                        </div>
+
+                            <iframe
+                            src="https://mail.belcleaning.com/widget/form/Lir3T0jW15k4i4aEeveH"
+                            style="width:100%;height:100%;border:none;border-radius:3px"
+                            id="inline-Lir3T0jW15k4i4aEeveH" 
+                            data-layout="{'id':'INLINE'}"
+                            data-trigger-type="alwaysShow"
+                            data-trigger-value=""
+                            data-activation-type="alwaysActivated"
+                            data-activation-value=""
+                            data-deactivation-type="neverDeactivate"
+                            data-deactivation-value=""
+                            data-form-name="Quote Request"
+                            data-height="908"
+                            data-layout-iframe-id="inline-Lir3T0jW15k4i4aEeveH"
+                            data-form-id="Lir3T0jW15k4i4aEeveH"
+                            title="Quote Request"
+                                >
+                        </iframe>
+                        <script src="https://mail.belcleaning.com/js/form_embed.js"></script>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Sidebar Column -->
+                <div class="col-lg-4 col-md-12">
+                    <!-- Contact Information Widget -->
+                    <div class="sidebar-widget fade_up">
+                        <h3>Contact Information</h3>
+                        <div style="margin-bottom: 20px;">
+                            <p style="margin-bottom: 10px;"><strong>Phone:</strong></p>
+                            <a href="tel:+16363893148" style="font-size: 18px; color: #1a365d; font-weight: 600;">(636) 389-3148</a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <p style="margin-bottom: 10px;"><strong>Email:</strong></p>
+                            <a href="mailto:info@belcleaning.com" style="color: #1a365d;">info@belcleaning.com</a>
+                        </div>
+                        <div>
+                            <p style="margin-bottom: 10px;"><strong>Hours:</strong></p>
+                            <p style="margin: 0; color: #666;">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                            <p style="margin: 0; color: #666;">Saturday: 8:00 AM - 3:00 PM</p>
+                            <p style="margin: 0; color: #666;">Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <!-- Our Services Widget -->
+                    <div class="sidebar-widget fade_up">
+                        <h3>Our Services</h3>
+                        <ul>
+                            <li><a href="office-cleaning.html">Office & Facility Cleaning</a></li>
+                            <li><a href="warehouse-cleaning.html">Warehouse Cleaning</a></li>
+                            <li><a href="data-center-cleaning.html">Data Center Cleaning</a></li>
+                            <li><a href="healthcare-cleaning.html">Healthcare Cleaning</a></li>
+                            <li><a href="floor-cleaning.html">Floor Maintenance</a></li>
+                            <li><a href="construction-cleaning.html">Construction Cleaning</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Why Choose Us Widget -->
+                    <div class="sidebar-widget fade_up" style="background: linear-gradient(135deg, #1a365d 0%, #2d5a87 100%); color: white;">
+                        <h3 style="color: white;">Why Choose Bel Cleaning?</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.2);">
+                                ✓ OSHA Compliant Services
+                            </li>
+                            <li style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.2);">
+                                ✓ Licensed, Bonded & Insured
+                            </li>
+                            <li style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.2);">
+                                ✓ 15+ Years Experience
+                            </li>
+                            <li style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.2);">
+                                ✓ Customized Cleaning Plans
+                            </li>
+                            <li style="padding: 10px 0; border-bottom: none;">
+                                ✓ 24/7 Customer Support
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================== How It Works Section ===================================== -->
+    <section class="section-how-to-work">
+        <div class="container position-relative">
+            <img class="how-to-work-bg" src="assets/images/about/how-to-work-bg.png" alt="background">
+            <p class="cap-text cost-cal position-relative fade_up">How It Works</p>
+            <h2 class="sec-text fre pb-0 fade_up">Simple Steps To Get Started</h2>
+            <div class="how-work-step-box">
+                <div class="how-work-step-box-sub fade_up">
+                    <div class="how-to-work-circle">
+                        <img src="assets/images/svg/how-to-work-svg1.svg" alt="step-1">
+                    </div>
+                    <h3>Submit Your Quote</h3>
+                    <p class="fessional send-info">Fill out the form above with your cleaning requirements and facility details.</p>
+                </div>
+                <div class="how-work-step-box-sub how-to-work-arrow">
+                    <div>
+                        <img src="assets/images/svg/how-to-work-arrow.svg" alt="arrow">
+                    </div>
+                </div>
+                <div class="how-work-step-box-sub fade_up">
+                    <div class="how-to-work-circle">
+                        <img src="assets/images/svg/how-to-work-svg2.svg" alt="step-2">
+                    </div>
+                    <h3>Get Your Custom Quote</h3>
+                    <p class="fessional send-info">We'll review your needs and provide a detailed, customized quote within 24 hours.</p>
+                </div>
+                <div class="how-work-step-box-sub how-to-work-arrow">
+                    <div>
+                        <img src="assets/images/svg/how-to-work-arrow.svg" alt="arrow">
+                    </div>
+                </div>
+                <div class="how-work-step-box-sub fade_up">
+                    <div class="how-to-work-circle">
+                        <img src="assets/images/svg/how-to-work-svg3.svg" alt="step-3">
+                    </div>
+                    <h3>Schedule & Relax</h3>
+                    <p class="fessional send-info">Approve your quote, set your schedule, and let our professional team handle the rest.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================== Footer (Optimized) ===================================== -->
+    <div id="site-footer"></div>
+
+    <!-- ====================== Scripts ======================= -->
+    <script src="assets/javascript/jquery.js"></script>
+    <script src="assets/javascript/bootstrap.min.js"></script>
+    <script src="assets/javascript/swiper-bundle.min.js"></script>
+    <script src="assets/javascript/smooth-scroll.js"></script>
+    <script src="/assets/js/partials.js"></script>
+
+    <script>
+        // ============================================
+        // PAGE INITIALIZATION
+        // ============================================
+        window.addEventListener('DOMContentLoaded', function() {
+            
+            // ============================================
+            // INTERSECTION OBSERVER - Animations
+            // ============================================
+            (function () {
+                var elements = document.querySelectorAll('.fade_up, .fade_down, .fade_in');
+                if (!elements.length) return;
+                
+                if ('IntersectionObserver' in window) {
+                    var observer = new IntersectionObserver(function(entries) {
+                        entries.forEach(function(entry) {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('is-visible');
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }, {
+                        root: null,
+                        rootMargin: '0px 0px -10% 0px',
+                        threshold: 0.1
+                    });
+                    
+                    elements.forEach(function(el) {
+                        observer.observe(el);
+                    });
+                } else {
+                    elements.forEach(function(el) {
+                        el.classList.add('is-visible');
+                    });
+                }
+            })();
+
+            // ============================================
+            // QUOTE FORM SUBMISSION
+            // ============================================
+            var quoteForm = document.getElementById('quoteForm');
+            var successMessage = document.getElementById('successMessage');
+            var errorMessage = document.getElementById('errorMessage');
+
+            if (quoteForm) {
+                quoteForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    // Hide any existing messages
+                    successMessage.classList.remove('show');
+                    errorMessage.classList.remove('show');
+
+                    // Get form data
+                    var formData = new FormData(quoteForm);
+                    formData.append('formType', 'quote');
+
+                    try {
+                        // Submit form
+                        var response = await fetch('send-form.php', {
+                            method: 'POST',
+                            body: formData,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        });
+
+                        var result = await response.json().catch(function() {
+                            return { ok: false };
+                        });
+
+                        if (response.ok && result.ok !== false) {
+                            // Success
+                            successMessage.classList.add('show');
+                            quoteForm.reset();
+                            
+                            // Scroll to success message
+                            successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+                            // Track conversion (Google Analytics)
+                            if (typeof gtag !== 'undefined') {
+                                gtag('event', 'form_submission', {
+                                    'event_category': 'Quote Form',
+                                    'event_label': 'Quote Request Submitted'
+                                });
+                            }
+                        } else {
+                            throw new Error('Form submission failed');
+                        }
+                    } catch (error) {
+                        // Error
+                        console.error('Form submission error:', error);
+                        errorMessage.classList.add('show');
+                        errorMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }
+                });
+            }
+
+            // ============================================
+            // PAGE LOADER
+            // ============================================
+            (function() {
+                var pageLoader = document.querySelector('.page-loader');
+                
+                function hideLoader() {
+                    if (pageLoader) pageLoader.classList.add('hide');
+                }
+                
+                if (document.readyState === 'complete') {
+                    hideLoader();
+                } else {
+                    window.addEventListener('load', hideLoader);
+                }
+                
+                setTimeout(hideLoader, 3000);
+            })();
+
+            // ============================================
+            // FORM FIELD VALIDATION
+            // ============================================
+            var phoneInput = document.getElementById('phone');
+            if (phoneInput) {
+                phoneInput.addEventListener('input', function(e) {
+                    var value = e.target.value.replace(/\D/g, '');
+                    if (value.length > 10) {
+                        value = value.substring(0, 10);
+                    }
+                    e.target.value = value;
+                });
+            }
+
+            // Auto-set min date for start date field
+            var startDateInput = document.getElementById('startDate');
+            if (startDateInput) {
+                var today = new Date().toISOString().split('T')[0];
+                startDateInput.setAttribute('min', today);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Janitorial Cleaning Blog: Complete Service Guides | Bel Cleaning</title>
+  <meta name="description" content="The Bel Cleaning janitorial cleaning blog &mdash; complete service guides for office, warehouse, healthcare, data center, floor care, and post-construction cleaning.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://belcleaning.com/janitorial-commercial-cleaning-blog.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Janitorial Cleaning Blog | Bel Cleaning">
+  <meta property="og:description" content="Complete guides to janitorial cleaning services &mdash; office, warehouse, healthcare, data center, floor care, and post-construction cleanup.">
+  <meta property="og:url" content="https://belcleaning.com/janitorial-commercial-cleaning-blog.html">
+  <meta property="og:image" content="https://belcleaning.com/assets/images/blog/blog-img1.jpg">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GV0SLHSP6"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1GV0SLHSP6');</script>
+  <link rel="stylesheet" href="/assets/css/swap.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/swiper.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/media_query.css">
+  <link rel="stylesheet" href="/assets/css/page-animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+:root{
+  --navy:#1a365d;--blue:#2d5a87;--accent:#f59e0b;
+  --bg:#f0f4f8;--white:#fff;--text:#374151;
+  --muted:#6b7280;--border:#e5e7eb;--r:16px;
+  --sh:0 4px 24px rgba(26,54,93,.10);
+  --shl:0 12px 40px rgba(26,54,93,.16);
+  --nav-h:76px;           /* matches site-wide header height */
+}
+/* Body offset — must clear the fixed site nav */
+body{padding-top:var(--nav-h)!important}
+*{box-sizing:border-box}
+/* ── Scroll-reveal (IntersectionObserver, no GSAP dependency) ── */
+.fade_up{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;will-change:opacity,transform}
+.fade_up.is-visible{opacity:1;transform:none}
+
+/* HERO */
+.blog-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 60%,#3d7ab5 100%);padding:56px 0 72px;position:relative;overflow:hidden;color:#fff}
+.blog-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 70% 50%,rgba(255,255,255,.06) 0%,transparent 70%)}
+.blog-hero::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:60px;background:var(--bg);clip-path:ellipse(55% 100% at 50% 100%)}
+.hero-inner{position:relative;z-index:2}
+.hero-bc{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.6);margin-bottom:24px;list-style:none;padding:0;flex-wrap:wrap}
+.hero-bc li a{color:rgba(255,255,255,.6);text-decoration:none}
+.hero-bc li a:hover{color:#fff}
+.hero-bc li:not(:last-child)::after{content:'/';margin-left:8px;opacity:.4}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:7px 18px;border-radius:50px;margin-bottom:20px}
+.hero-badge i{font-size:11px;color:var(--accent)}
+.blog-hero h1{font-size:clamp(28px,4.5vw,52px);font-weight:800;line-height:1.15;color:#fff;margin-bottom:18px;max-width:720px;letter-spacing:-.5px}
+.blog-hero h1 span{color:var(--accent)}
+.hero-sub{font-size:17px;line-height:1.75;color:rgba(255,255,255,.82);max-width:620px;margin-bottom:36px}
+.hero-stats{display:flex;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:14px;overflow:hidden;width:fit-content}
+.hero-stat{padding:18px 28px;text-align:center;border-right:1px solid rgba(255,255,255,.12)}
+.hero-stat:last-child{border-right:none}
+.hero-stat strong{display:block;font-size:26px;font-weight:800;color:#fff;line-height:1}
+.hero-stat span{font-size:12px;color:rgba(255,255,255,.65);text-transform:uppercase;letter-spacing:1px;margin-top:4px;display:block}
+
+/* TOPIC PICKER */
+.topic-sec{background:var(--bg);padding:70px 0 60px}
+.sec-label{font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:8px;display:block}
+.sec-title{font-size:clamp(22px,3vw,36px);font-weight:800;color:var(--navy);margin-bottom:10px;letter-spacing:-.3px;line-height:1.2}
+.sec-sub{font-size:15px;color:var(--muted);margin-bottom:44px;max-width:540px;line-height:1.7}
+.topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.topic-card{position:relative;background:var(--white);border-radius:var(--r);padding:28px 24px 22px;border:2px solid var(--border);text-decoration:none;color:inherit;transition:all .3s cubic-bezier(.34,1.56,.64,1);overflow:hidden;display:flex;flex-direction:column;cursor:pointer}
+.topic-card::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--navy),var(--blue));opacity:0;transition:opacity .3s;z-index:0;border-radius:14px}
+.topic-card:hover{transform:translateY(-6px) scale(1.02);box-shadow:var(--shl);border-color:var(--navy);text-decoration:none;color:inherit}
+.topic-card:hover::after{opacity:1}
+.topic-card:hover .tc-icon,.topic-card:hover .tc-tag{background:rgba(255,255,255,.18);color:#fff}
+.topic-card:hover .tc-title{color:#fff}
+.topic-card:hover .tc-desc{color:rgba(255,255,255,.82)}
+.topic-card:hover .tc-arrow{color:#fff;gap:10px}
+.topic-card:hover .tc-arrow img{filter:brightness(0) invert(1)}
+.tc-z{position:relative;z-index:1;display:flex;flex-direction:column;height:100%}
+.tc-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px}
+.tc-icon{width:54px;height:54px;background:#eef4fb;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;transition:background .3s;flex-shrink:0}
+.tc-tag{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--blue);background:#eef4fb;padding:4px 12px;border-radius:20px;transition:all .3s;align-self:flex-start;margin-top:4px}
+.tc-title{font-size:17px;font-weight:800;color:var(--navy);margin-bottom:10px;line-height:1.3;transition:color .3s}
+.tc-desc{font-size:14px;color:var(--muted);line-height:1.7;flex:1;margin-bottom:20px;transition:color .3s}
+.tc-arrow{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--navy);transition:all .25s;margin-top:auto}
+.tc-arrow img{width:13px;transition:filter .25s}
+
+/* STICKY NAV */
+
+
+/* BLOG BODY */
+.blog-body{background:var(--bg);padding:0 0 80px}
+.cat-sec{padding:72px 0;border-bottom:2px solid var(--border)}
+.cat-sec:nth-child(odd){background:var(--white)}
+.cat-sec:nth-child(even){background:#f8fafc}
+.cat-sec:last-of-type{border-bottom:none}
+
+/* SECTION HEADER CARD */
+.shc{background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 100%);border-radius:var(--r);padding:32px 36px;display:flex;align-items:center;gap:24px;margin-bottom:40px;color:#fff;box-shadow:0 6px 24px rgba(26,54,93,.2)}
+.shc-icon{width:70px;height:70px;background:rgba(255,255,255,.15);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:32px;flex-shrink:0}
+.shc-ey{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:6px}
+.shc h2{font-size:clamp(18px,2.5vw,24px);font-weight:800;color:#fff;margin-bottom:6px;line-height:1.25;letter-spacing:-.2px}
+.shc-meta{display:flex;gap:16px;font-size:13px;color:rgba(255,255,255,.65);flex-wrap:wrap}
+.shc-meta span{display:flex;align-items:center;gap:5px}
+
+/* ARTICLE */
+.art{color:var(--text)}
+.art p{font-size:15.5px;line-height:1.85;margin-bottom:1.2rem}
+.art ul,.art ol{padding-left:1.4rem;margin-bottom:1.2rem}
+.art li{font-size:15.5px;line-height:1.8;margin-bottom:7px}
+.art strong{color:var(--navy);font-weight:700}
+.art a{color:var(--navy);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.art a:hover{color:var(--blue)}
+.art h2{font-size:21px;font-weight:800;color:var(--navy);margin:2.5rem 0 1rem;display:flex;align-items:center;gap:10px;letter-spacing:-.2px}
+.art h2::before{content:'';width:4px;height:24px;background:linear-gradient(var(--navy),var(--blue));border-radius:4px;flex-shrink:0}
+.art h3{font-size:18px;font-weight:700;color:var(--blue);margin:1.75rem 0 .6rem}
+
+/* CALLOUT */
+.callout{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-left:4px solid var(--navy);border-radius:0 12px 12px 0;padding:20px 24px;margin:2rem 0;display:flex;gap:14px;align-items:flex-start}
+.callout-ico{font-size:20px;flex-shrink:0;margin-top:2px}
+.callout p{margin-bottom:0;font-size:15px;color:var(--navy);font-weight:500;line-height:1.7}
+
+/* FEATURE GRID */
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:1.5rem 0}
+.fi-card{background:var(--white);border-radius:12px;padding:20px;border:1px solid var(--border);border-top:3px solid var(--navy);transition:box-shadow .2s}
+.fi-card:hover{box-shadow:var(--sh)}
+.fi-card h4{font-size:15px;font-weight:800;color:var(--navy);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.fi-card h4 .fi{font-size:18px}
+.fi-card p{font-size:14px;color:var(--muted);margin-bottom:0;line-height:1.65}
+
+/* STEPS */
+.steps{list-style:none;padding:0;margin:1.5rem 0}
+.steps li{display:flex;gap:18px;align-items:flex-start;margin-bottom:16px;padding:18px 20px;background:var(--white);border-radius:12px;border:1px solid var(--border);transition:box-shadow .2s,border-color .2s}
+.steps li:hover{box-shadow:var(--sh);border-color:#c7d7ea}
+.sn{min-width:38px;height:38px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;flex-shrink:0}
+.steps li>div p{margin-bottom:0;font-size:14.5px;color:var(--muted)}
+.steps li>div strong{display:block;color:var(--navy);font-weight:800;font-size:16px;margin-bottom:5px}
+
+/* TABLE */
+.tw{border-radius:14px;overflow:hidden;box-shadow:var(--sh);margin:2rem 0;border:1px solid var(--border)}
+.ct{width:100%;border-collapse:collapse;font-size:14px}
+.ct thead{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff}
+.ct thead th{padding:14px 18px;font-weight:700;font-size:13px;text-align:left;letter-spacing:.3px}
+.ct tbody tr{border-bottom:1px solid var(--border);transition:background .15s}
+.ct tbody tr:last-child{border-bottom:none}
+.ct tbody tr:hover{background:#f0f6ff}
+.ct tbody td{padding:13px 18px;color:var(--text);vertical-align:top;line-height:1.55}
+.ct tbody td:first-child{font-weight:700;color:var(--navy);background:#f8fafc;width:32%}
+
+/* INLINE CTA */
+.icta{background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 100%);border-radius:var(--r);padding:30px 36px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:2.5rem 0;box-shadow:0 8px 28px rgba(26,54,93,.2)}
+.icta h4{color:#fff;font-size:17px;font-weight:800;margin-bottom:4px;letter-spacing:-.1px}
+.icta p{color:rgba(255,255,255,.82);font-size:14px;margin-bottom:0;line-height:1.55}
+.icta p a{color:rgba(255,255,255,.92);font-weight:700}
+.b-cta-btn{background:#fff;color:var(--navy);font-weight:800;font-size:14px;padding:12px 22px;border-radius:6px;display:inline-flex;align-items:center;gap:7px;text-decoration:none;flex-shrink:0;white-space:nowrap;transition:box-shadow .2s,transform .2s}
+.b-cta-btn:hover{box-shadow:0 6px 20px rgba(0,0,0,.15);transform:translateY(-2px);color:var(--navy);text-decoration:none}
+.b-cta-btn img{width:12px;filter:brightness(0) saturate(100%) invert(15%) sepia(24%) saturate(2477%) hue-rotate(183deg) brightness(94%) contrast(95%)}
+
+/* SIDEBAR */
+.sb{position:sticky;top:calc(var(--nav-h) + 12px);max-height:calc(100vh - var(--nav-h) - 24px);overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:#e2e8f0 transparent}
+.sb::-webkit-scrollbar{width:3px}
+.sb::-webkit-scrollbar-thumb{background:#e2e8f0;border-radius:4px}
+.sb-card{background:var(--white);border-radius:var(--r);padding:24px;box-shadow:var(--sh);margin-bottom:20px;border:1px solid var(--border)}
+.sb-card h4{font-size:13px;font-weight:800;color:var(--navy);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);letter-spacing:.5px;text-transform:uppercase}
+.toc-list{list-style:none;padding:0;margin:0}
+.toc-list li{margin-bottom:10px}
+.toc-list a{font-size:13.5px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:10px;padding:4px 0;transition:color .2s}
+.toc-list a:hover{color:var(--navy)}
+.toc-all{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:800;color:var(--navy);text-decoration:none;margin-top:14px;padding-top:12px;border-top:1px solid var(--border)}
+.toc-all:hover{text-decoration:underline}
+.sb-cta{background:linear-gradient(135deg,var(--navy),var(--blue));border-radius:var(--r);padding:26px;text-align:center;margin-bottom:20px}
+.sb-cta h4{color:#fff;font-size:16px;font-weight:800;margin-bottom:8px;border:none;padding:0;text-transform:none;letter-spacing:0}
+.sb-cta p{font-size:13.5px;color:rgba(255,255,255,.82);margin-bottom:18px;line-height:1.6}
+.sb-cta p a{color:rgba(255,255,255,.92);font-weight:700}
+.b-sb-btn{background:#fff;color:var(--navy);font-size:13px;font-weight:800;padding:10px 20px;border-radius:6px;display:inline-flex;align-items:center;gap:6px;text-decoration:none;transition:box-shadow .2s}
+.b-sb-btn:hover{box-shadow:0 4px 14px rgba(0,0,0,.15);color:var(--navy);text-decoration:none}
+.b-sb-btn img{width:11px;filter:brightness(0) saturate(100%) invert(15%) sepia(24%) saturate(2477%) hue-rotate(183deg) brightness(94%) contrast(95%)}
+.svc-row{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid #f3f4f6;text-decoration:none}
+.svc-row:last-of-type{border-bottom:none;padding-bottom:0}
+.svc-row:hover .sn2{text-decoration:underline}
+.sico{width:40px;height:40px;background:#eef4fb;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.sn2{font-size:13px;font-weight:700;color:var(--navy);display:block;line-height:1.3;margin-bottom:2px}
+.ss2{font-size:12px;color:var(--muted)}
+.sb-all{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:800;color:var(--navy);text-decoration:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--border)}
+.sb-all:hover{text-decoration:underline}
+.sb-contact a{display:flex;align-items:center;gap:9px;font-weight:700;color:var(--navy);text-decoration:none;font-size:14.5px;margin-bottom:10px}
+.sb-contact a:last-child{font-weight:400;font-size:13.5px;color:var(--muted)}
+.sb-contact a:hover{text-decoration:underline}
+
+/* FINAL CTA */
+.fcta{background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 100%);padding:90px 0;text-align:center;position:relative;overflow:hidden}
+.fcta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 20%,rgba(255,255,255,.06),transparent)}
+.fcta .container{position:relative;z-index:1}
+.fcta h2{color:#fff;font-size:clamp(26px,3.5vw,38px);font-weight:800;margin-bottom:14px;letter-spacing:-.3px}
+.fcta p{color:rgba(255,255,255,.82);font-size:17px;margin-bottom:36px;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.7}
+.fcta p a{color:rgba(255,255,255,.95);font-weight:700}
+.fcta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.b-primary{background:#fff;color:var(--navy);font-weight:800;font-size:15px;padding:14px 28px;border-radius:6px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:box-shadow .2s,transform .2s;letter-spacing:.02em}
+.b-primary:hover{box-shadow:0 8px 28px rgba(0,0,0,.2);transform:translateY(-2px);color:var(--navy);text-decoration:none}
+.b-primary img{width:13px;filter:brightness(0) saturate(100%) invert(15%) sepia(24%) saturate(2477%) hue-rotate(183deg) brightness(94%) contrast(95%)}
+.b-ghost{background:transparent;color:#fff;font-weight:700;font-size:15px;padding:14px 28px;border-radius:6px;border:2px solid rgba(255,255,255,.5);text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
+.b-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff;color:#fff}
+
+/* RESPONSIVE */
+@media(max-width:991px){.sb{position:static;max-height:none}.topic-grid{grid-template-columns:repeat(2,1fr)}.hero-stats{flex-wrap:wrap}.shc{flex-direction:column;align-items:flex-start;gap:16px}.icta{flex-direction:column;text-align:center}.b-cta-btn{width:100%;justify-content:center}}
+@media(max-width:767px){.blog-hero{padding:36px 0 52px}.topic-grid{grid-template-columns:1fr}.fg{grid-template-columns:1fr}.hero-stats{width:100%}.hero-stat{flex:1}.shc{padding:24px 22px}.cat-sec{padding:52px 0}}
+  </style>
+</head>
+<body>
+  <div class="page-loader" aria-hidden="true"><div class="leap-frog"><div class="leap-frog__dot"></div><div class="leap-frog__dot"></div><div class="leap-frog__dot"></div></div></div>
+  <div id="site-header" data-include="/assets/includes/header.html"></div>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="blog-hero">
+      <div class="container">
+        <div class="hero-inner">
+          <ol class="hero-bc" aria-label="Breadcrumb">
+            <li><a href="/index.html">Home</a></li>
+            <li aria-current="page">Cleaning Blog</li>
+          </ol>
+          <div class="hero-badge"><i class="fas fa-book-open"></i> Janitorial Cleaning Blog</div>
+          <h1>Your Complete Guide to <span>Commercial Cleaning</span> Services</h1>
+          <p class="hero-sub">Expert <a href="/janitorial-commercial-cleaning-services.html" style="color:#fff;font-weight:700;">janitorial cleaning</a> guides for facility managers &mdash; covering every service type, written by Bel Cleaning's OSHA-compliant commercial cleaning specialists.</p>
+          <div class="hero-stats">
+            <div class="hero-stat"><strong>6</strong><span>Guides</span></div>
+            <div class="hero-stat"><strong>15+</strong><span>Yrs Exp</span></div>
+            <div class="hero-stat"><strong>100%</strong><span>OSHA</span></div>
+            <div class="hero-stat"><strong>US</strong><span>Nationwide</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOPIC PICKER CARDS -->
+    <section class="topic-sec" aria-labelledby="topics-h">
+      <div class="container">
+        <p class="sec-label">Jump to any guide</p>
+        <h2 id="topics-h" class="sec-title">Which Cleaning Topic Can We Help With?</h2>
+        <p class="sec-sub">Click any card to jump straight to the expert guide for that service.</p>
+        <div class="topic-grid">
+          <a href="#office-cleaning" class="topic-card fade_up"><div class="tc-z"><div class="tc-top"><div class="tc-icon">&#x1F3E2;</div><span class="tc-tag">7 min</span></div><h3 class="tc-title">Office Janitorial Cleaning</h3><p class="tc-desc">Nightly schedules, touchpoint disinfection, day porter services, and how to choose the right janitorial cleaning company.</p><span class="tc-arrow">Read Guide <img src="/assets/images/svg/cross-arrow.svg" alt=""></span></div></a>
+          <a href="#warehouse-cleaning" class="topic-card fade_up"><div class="tc-z"><div class="tc-top"><div class="tc-icon">&#x1F3ED;</div><span class="tc-tag">7 min</span></div><h3 class="tc-title">Warehouse Janitorial Cleaning</h3><p class="tc-desc">OSHA compliance, high-dust rafter removal, machine scrubbing, and industrial floor care for warehouses.</p><span class="tc-arrow">Read Guide <img src="/assets/images/svg/cross-arrow.svg" alt=""></span></div></a>
+          <a href="#data-center-cleaning" class="topic-card fade_up"><div class="tc-z"><div class="tc-top"><div class="tc-icon">&#x1F4BB;</div><span class="tc-tag">6 min</span></div><h3 class="tc-title">Data Center Cleaning Services</h3><p class="tc-desc">Anti-static protocols, raised floor cleaning, server rack detailing, and ISO-aligned schedules to protect uptime.</p><span class="tc-arrow">Read Guide <img src="/assets/images/svg/cross-arrow.svg" alt=""></span></div></a>
+          <a href="#healthcare-cleaning" class="topic-card fade_up"><div class="tc-z"><div class="tc-top"><div class="tc-icon">&#x1F3E5;</div><span class="tc-tag">7 min</span></div><h3 class="tc-title">Healthcare Janitorial Cleaning</h3><p class="tc-desc">Terminal cleaning, EPA-registered disinfectants, touchpoint protocols, and compliance for medical offices.</p><span class="tc-arrow">Read Guide <img src="/assets/images/svg/cross-arrow.svg" alt=""></span></div></a>
+          <a href="#floor-cleaning" class="topic-card fade_up"><div class="tc-z"><div class="tc-top"><div class="tc-icon">&#x2728;</div><span class="tc-tag">8 min</span></div><h3 class="tc-title">Commercial Floor Cleaning</h3><p class="tc-desc">VCT strip and wax, auto-scrubbing, burnishing, carpet extraction, and a full scheduling guide for every floor type.</p><span class="tc-arrow">Read Guide <img src="/assets/images/svg/cross-arrow.svg" alt=""></span></div></a>
+          <a href="#construction-cleaning" class="topic-card fade_up"><div class="tc-z"><div class="tc-top"><div class="tc-icon">&#x1F3D7;&#xFE0F;</div><span class="tc-tag">7 min</span></div><h3 class="tc-title">Post-Construction Cleaning</h3><p class="tc-desc">The three phases of post-construction cleanup &mdash; rough, final, and turnover &mdash; explained for facility managers and GCs.</p><span class="tc-arrow">Read Guide <img src="/assets/images/svg/cross-arrow.svg" alt=""></span></div></a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- BLOG BODY -->
+    <div class="blog-body">
+      <div class="container">
+        <div class="row pt-5 g-4">
+          <div class="col-lg-8">
+
+            <!-- 1. OFFICE -->
+            <section class="cat-sec" id="office-cleaning">
+              <div class="shc">
+                <div class="shc-icon">&#x1F3E2;</div>
+                <div>
+                  <p class="shc-ey">Office &amp; Facility Janitorial Cleaning</p>
+                  <h2>Office Janitorial Cleaning: The Complete Guide</h2>
+                  <div class="shc-meta"><span><i class="fas fa-clock"></i> 7 min read</span><span><i class="fas fa-tag"></i> Janitorial Services</span><span><i class="fas fa-shield-alt"></i> OSHA Compliant</span></div>
+                </div>
+              </div>
+              <div class="art">
+                <p>Professional <a href="/janitorial-commercial-cleaning-services.html">janitorial cleaning services</a> are the foundation of a healthy, productive workplace. Understanding what <a href="/office-cleaning.html">office janitorial cleaning</a> actually covers is the first step to getting it right.</p>
+                <div class="callout"><span class="callout-ico">&#x1F4A1;</span><p><strong>Key insight:</strong> The average office worker touches 30+ shared surfaces daily. Without consistent touchpoint disinfection in your <a href="/janitorial-commercial-cleaning-services.html">janitorial cleaning program</a>, cold and flu viruses can spread through an entire team in under 48 hours.</p></div>
+                <h2>What's Included in Nightly Office Janitorial Cleaning?</h2>
+                <h3>General Areas &amp; Workstations</h3>
+                <ul>
+                  <li>Emptying and relining all trash and recycling bins at every workstation</li>
+                  <li>Vacuuming all carpeted areas including under desks and around furniture</li>
+                  <li>Sweeping and mopping all hard floors &mdash; tile, LVT, hardwood, concrete</li>
+                  <li>Dusting horizontal surfaces &mdash; desks, windowsills, ledges, and shelving</li>
+                  <li>Wiping shared equipment &mdash; printers, copiers, shared monitors</li>
+                </ul>
+                <h3>Restrooms</h3>
+                <ul>
+                  <li>Cleaning and disinfecting all toilets, urinals, and sinks</li>
+                  <li>Restocking paper towels, toilet paper, soap, and hand sanitizer</li>
+                  <li>Scrubbing tile grout and disinfecting floors</li>
+                  <li>Cleaning mirrors and polishing chrome fixtures</li>
+                </ul>
+                <h3>High-Touch Surface Disinfection</h3>
+                <ul>
+                  <li>Door handles, push plates, and kick plates throughout the building</li>
+                  <li>Light switches, elevator buttons, and handrails</li>
+                  <li>Reception desk surfaces and visitor seating</li>
+                  <li>Conference room tables, chairs, and A/V controls</li>
+                </ul>
+                <h2>Choosing the Right Janitorial Cleaning Schedule</h2>
+                <div class="fg">
+                  <div class="fi-card"><h4><span class="fi">&#x1F464;</span> Small Office (under 20)</h4><p>3x per week often works. Prioritize restrooms, trash, and kitchen daily where possible.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x1F465;</span> Mid-Size (20&ndash;100 staff)</h4><p>5x per week nightly. Add a day porter 2&ndash;3 days/week for heavy lobby traffic.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x1F3E2;</span> Large Corporate (100+)</h4><p>Nightly 5&ndash;7 days + full-time day porter. Quarterly <a href="/floor-cleaning.html">floor cleaning</a> included.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x1F3EC;</span> Multi-Tenant Building</h4><p>Nightly for common areas + customized per-tenant schedule for individual suites.</p></div>
+                </div>
+                <h2>5 Things to Look for in an Office Janitorial Cleaning Company</h2>
+                <ul class="steps">
+                  <li><div class="sn">1</div><div><strong>Licensed, Bonded &amp; Insured</strong><p>Every <a href="/janitorial-commercial-cleaning-services.html">janitorial cleaning company</a> must carry general liability insurance and bonding covering theft, damage, and worker injuries.</p></div></li>
+                  <li><div class="sn">2</div><div><strong>Background-Checked Staff</strong><p>Your cleaning crew has after-hours access to your entire facility. Every technician should be background-verified before entry.</p></div></li>
+                  <li><div class="sn">3</div><div><strong>Consistent Crew Assignments</strong><p>Rotating crews mean constant retraining and inconsistent results. A dedicated team learns your facility and your standards.</p></div></li>
+                  <li><div class="sn">4</div><div><strong>Clear Written Scope of Work</strong><p>Your contract should spell out exactly what's included &mdash; room by room, task by task, frequency by frequency.</p></div></li>
+                  <li><div class="sn">5</div><div><strong>Quality Checks &amp; Accountability</strong><p>A professional <a href="/office-cleaning.html">office janitorial cleaning company</a> inspects their own work and has a documented process for handling issues.</p></div></li>
+                </ul>
+                <div class="icta">
+                  <div><h4>Ready to Upgrade Your Office Janitorial Cleaning?</h4><p>View our <a href="/office-cleaning.html">office janitorial cleaning service</a> &mdash; customized nightly programs scaled to your facility.</p></div>
+                  <a href="/get-quote.html" class="b-cta-btn">Get a Free Quote <img src="/assets/images/svg/cross-arrow.svg" alt=""></a>
+                </div>
+              </div>
+            </section>
+
+            <!-- 2. WAREHOUSE -->
+            <section class="cat-sec" id="warehouse-cleaning">
+              <div class="shc">
+                <div class="shc-icon">&#x1F3ED;</div>
+                <div>
+                  <p class="shc-ey">Warehouse Janitorial Cleaning</p>
+                  <h2>Warehouse Cleaning: OSHA Compliance, High-Dust &amp; Floor Care</h2>
+                  <div class="shc-meta"><span><i class="fas fa-clock"></i> 7 min read</span><span><i class="fas fa-tag"></i> Industrial Janitorial</span><span><i class="fas fa-hard-hat"></i> OSHA Required</span></div>
+                </div>
+              </div>
+              <div class="art">
+                <p>Industrial <a href="/warehouse-cleaning.html">warehouse janitorial cleaning</a> is a specialized discipline that standard <a href="/office-cleaning.html">office cleaning companies</a> cannot handle. Warehouses face challenges that don't exist in offices: rafter dust, oil-soaked floors, dock debris, and OSHA regulations that apply regardless of your last cleaning schedule.</p>
+                <div class="callout"><span class="callout-ico">&#x26A0;&#xFE0F;</span><p><strong>OSHA 29 CFR 1910.22:</strong> Employers must maintain workplaces in a clean, orderly condition &mdash; including aisles and floors kept clear and in good repair at all times. Non-compliance carries real fines and citations.</p></div>
+                <h2>Why Warehouse Janitorial Cleaning Is Different</h2>
+                <div class="fg">
+                  <div class="fi-card"><h4><span class="fi">&#x1F4D0;</span> Scale</h4><p>20,000&ndash;500,000+ sq ft requires industrial scrubbers &mdash; mops cannot keep pace.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x2697;&#xFE0F;</span> Contamination Types</h4><p>Oil, grease, chemical residue, and metal shavings require different chemistry than <a href="/office-cleaning.html">office cleaning</a>.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x1F525;</span> High-Dust Fire Risk</h4><p>Rafter dust is a documented fire hazard under NFPA 654 &mdash; not just a cleanliness issue.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x1F69B;</span> Floor Degradation</h4><p>Forklifts create unique floor damage patterns needing periodic <a href="/floor-cleaning.html">floor cleaning services</a>.</p></div>
+                </div>
+                <h2>Routine Warehouse Janitorial Tasks</h2>
+                <ul>
+                  <li><strong>Aisle sweeping and mopping</strong> &mdash; keeping all pathways clear and slip-hazard-free</li>
+                  <li><strong>Break room and restroom cleaning</strong> &mdash; same standards as any <a href="/janitorial-commercial-cleaning-services.html">commercial janitorial service</a></li>
+                  <li><strong>Trash and debris removal</strong> &mdash; cardboard, plastic wrap, and packing materials daily</li>
+                  <li><strong>Spill response</strong> &mdash; oil, grease, and chemical spills addressed immediately</li>
+                  <li><strong>Safety line inspection</strong> &mdash; forklift and pedestrian zones clearly marked and visible</li>
+                  <li><strong>Dock area cleaning</strong> &mdash; debris and runoff at all loading docks</li>
+                </ul>
+                <h2>Industrial Floor Care Program</h2>
+                <ul class="steps">
+                  <li><div class="sn">1</div><div><strong>Machine Scrubbing</strong><p>Auto-scrubbers clean concrete far more effectively than mops &mdash; removing embedded grime in a single pass. Core to any <a href="/floor-cleaning.html">commercial floor cleaning</a> program.</p></div></li>
+                  <li><div class="sn">2</div><div><strong>Degreasing</strong><p>Dock areas require industrial degreasers before scrubbing to break down heavy oil and grease buildup.</p></div></li>
+                  <li><div class="sn">3</div><div><strong>Safety Line Touch-Up</strong><p>Forklift and pedestrian markings must be maintained when faded &mdash; this is OSHA compliance, not cosmetics.</p></div></li>
+                  <li><div class="sn">4</div><div><strong>Concrete Sealing</strong><p>Sealing every 1&ndash;2 years prevents moisture absorption, reduces dusting, and extends floor life dramatically.</p></div></li>
+                </ul>
+                <h2>OSHA Compliance: What Inspectors Look For</h2>
+                <div class="tw"><table class="ct"><thead><tr><th>OSHA Standard</th><th>What It Covers</th><th>Common Violation</th></tr></thead><tbody><tr><td>29 CFR 1910.22</td><td>General housekeeping</td><td>Cluttered aisles, debris on floors</td></tr><tr><td>29 CFR 1910.141</td><td>Sanitation</td><td>Dirty or unsupplied restrooms</td></tr><tr><td>NFPA 654</td><td>Combustible dust</td><td>Dust on rafters and electrical fixtures</td></tr><tr><td>29 CFR 1910.176</td><td>Material handling</td><td>Blocked exits, unclear forklift lanes</td></tr></tbody></table></div>
+                <div class="icta">
+                  <div><h4>OSHA-Compliant Warehouse Janitorial Cleaning</h4><p>View our full <a href="/warehouse-cleaning.html">warehouse janitorial cleaning service</a> &mdash; industrial scrubbing, high-dust removal, and compliance-ready programs.</p></div>
+                  <a href="/get-quote.html" class="b-cta-btn">Get a Free Quote <img src="/assets/images/svg/cross-arrow.svg" alt=""></a>
+                </div>
+              </div>
+            </section>
+
+            <!-- 3. DATA CENTER -->
+            <section class="cat-sec" id="data-center-cleaning">
+              <div class="shc">
+                <div class="shc-icon">&#x1F4BB;</div>
+                <div>
+                  <p class="shc-ey">Data Center Janitorial Cleaning</p>
+                  <h2>Data Center Cleaning: Protecting Uptime With Anti-Static Protocols</h2>
+                  <div class="shc-meta"><span><i class="fas fa-clock"></i> 6 min read</span><span><i class="fas fa-tag"></i> Anti-Static</span><span><i class="fas fa-bolt"></i> ESD Certified</span></div>
+                </div>
+              </div>
+              <div class="art">
+                <p>Unlike standard <a href="/janitorial-commercial-cleaning-services.html">janitorial cleaning</a>, <a href="/data-center-cleaning.html">data center cleaning services</a> require certified anti-static techniques. A single ESD discharge, improperly vacuumed subfloor, or chemical residue on a server rack can compromise equipment worth hundreds of thousands of dollars and trigger SLA-violating downtime.</p>
+                <div class="callout"><span class="callout-ico">&#x26A1;</span><p><strong>Critical risk:</strong> Standard commercial vacuums generate significant static electricity. Using non-ESD-rated equipment in a data center can cause immediate component damage or latent failures appearing weeks later.</p></div>
+                <h2>Why Data Centers Require Specialized Cleaning</h2>
+                <div class="fg">
+                  <div class="fi-card"><h4><span class="fi">&#x26A1;</span> ESD Risk</h4><p>All vacuums, cloths, and mops must be anti-static rated. No standard commercial equipment enters a live data center.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x1F321;&#xFE0F;</span> Particulate Sensitivity</h4><p>Dust on server intakes raises operating temperatures and shortens equipment life &mdash; routine <a href="/data-center-cleaning.html">cleaning</a> prevents this.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x1F9EA;</span> Chemical Restrictions</h4><p>Many conventional cleaners leave ionic residue that corrodes circuit boards or creates conductive paths across components.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x1F504;</span> Live Operations</h4><p>Cleaning happens with equipment running. Technicians must understand hot/cold aisle airflow and never disrupt it.</p></div>
+                </div>
+                <h2>Key Areas Requiring Professional Data Center Cleaning</h2>
+                <h3>Raised Floors &amp; Subfloors</h3>
+                <p>The subfloor plenum distributes cold air to equipment. Dust accumulation compromises cold air delivery, creates hot spots, and raises temperatures. Requires HEPA-filtered, anti-static vacuum extraction and ESD-safe cloths for wiping all subfloor panels.</p>
+                <h3>Server Racks &amp; Cable Trays</h3>
+                <ul>
+                  <li>Anti-static wiping of all rack exteriors, doors, and bezels</li>
+                  <li>ESD-safe vacuuming of all intake and exhaust vents only</li>
+                  <li>Cable tray debris removal &mdash; both overhead and under-floor trays</li>
+                  <li>Blanking panel audit &mdash; missing panels disrupt hot/cold aisle separation</li>
+                </ul>
+                <h2>Recommended Cleaning Frequency</h2>
+                <div class="tw"><table class="ct"><thead><tr><th>Area</th><th>Frequency</th><th>Why</th></tr></thead><tbody><tr><td>Raised floor surface</td><td>Weekly</td><td>Foot traffic continuously introduces particles</td></tr><tr><td>Subfloor plenum</td><td>Quarterly</td><td>Dust restricts cold air distribution</td></tr><tr><td>Rack exteriors &amp; vents</td><td>Monthly</td><td>Intake blockage raises operating temp</td></tr><tr><td>Cable trays</td><td>Semi-annually</td><td>Debris accumulates over time</td></tr><tr><td>UPS / battery rooms</td><td>Quarterly</td><td>Dust reduces cooling, accelerates wear</td></tr></tbody></table></div>
+                <div class="icta">
+                  <div><h4>Certified Data Center Cleaning Services</h4><p>Explore our <a href="/data-center-cleaning.html">anti-static data center cleaning service</a> &mdash; ISO-aligned protocols and full compliance documentation.</p></div>
+                  <a href="/get-quote.html" class="b-cta-btn">Get a Free Quote <img src="/assets/images/svg/cross-arrow.svg" alt=""></a>
+                </div>
+              </div>
+            </section>
+
+            <!-- 4. HEALTHCARE -->
+            <section class="cat-sec" id="healthcare-cleaning">
+              <div class="shc">
+                <div class="shc-icon">&#x1F3E5;</div>
+                <div>
+                  <p class="shc-ey">Healthcare Janitorial Cleaning</p>
+                  <h2>Healthcare Cleaning: Standards, Protocols &amp; What to Expect</h2>
+                  <div class="shc-meta"><span><i class="fas fa-clock"></i> 7 min read</span><span><i class="fas fa-tag"></i> Medical Janitorial</span><span><i class="fas fa-heartbeat"></i> CDC Aligned</span></div>
+                </div>
+              </div>
+              <div class="art">
+                <p>Proper <a href="/healthcare-cleaning.html">healthcare janitorial cleaning</a> carries a standard unlike any other commercial facility. In a medical office or clinic, inadequate <a href="/janitorial-commercial-cleaning-services.html">janitorial cleaning</a> is a patient safety issue &mdash; not cosmetic. Healthcare-associated infections (HAIs) are directly linked to routine cleaning failures.</p>
+                <div class="callout"><span class="callout-ico">&#x1F3E5;</span><p><strong>CDC data:</strong> On any given day, about 1 in 31 hospital patients has a healthcare-associated infection. A protocol-driven <a href="/healthcare-cleaning.html">healthcare janitorial cleaning program</a> plays a proven role in reducing HAI transmission rates.</p></div>
+                <h2>Why Healthcare Janitorial Cleaning Is Different</h2>
+                <div class="fg">
+                  <div class="fi-card"><h4><span class="fi">&#x1F9A0;</span> Pathogen Load</h4><p>Exam rooms harbor far higher pathogen concentrations than any typical <a href="/office-cleaning.html">office environment</a>.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x1F4CB;</span> Regulatory Standards</h4><p>Must align with CDC, OSHA, and APIC guidelines. Cleaning deficiencies result in citations or accreditation issues.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x1F9F4;</span> Product Selection</h4><p>EPA-registered hospital-grade disinfectants with proven kill claims (MRSA, C. diff, COVID-19) &mdash; with correct dwell time, every visit.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x26A0;&#xFE0F;</span> Regulated Waste</h4><p>Sharps and biohazard materials require trained staff with proper PPE and regulated disposal protocols.</p></div>
+                </div>
+                <h2>What Is Terminal Cleaning?</h2>
+                <p>Terminal cleaning is the comprehensive top-to-bottom disinfection of an exam room after discharge &mdash; following a strict <strong>high-to-low, clean-to-dirty</strong> sequence:</p>
+                <ul class="steps">
+                  <li><div class="sn">1</div><div><strong>Remove All Linens &amp; Regulated Waste</strong><p>All contaminated materials placed in correct containers &mdash; regular, biohazard, or sharps &mdash; before any cleaning begins.</p></div></li>
+                  <li><div class="sn">2</div><div><strong>Clean All Surfaces Top to Bottom</strong><p>Ceiling vents to flooring &mdash; light fixtures, IV poles, window sills, bed frames, chairs. No surface skipped.</p></div></li>
+                  <li><div class="sn">3</div><div><strong>Apply EPA-Registered Disinfectant</strong><p>Full dwell time observed on every surface. Spraying and immediately wiping is NOT disinfection &mdash; dwell time is non-negotiable.</p></div></li>
+                  <li><div class="sn">4</div><div><strong>Disinfect High-Touch Points Last</strong><p>Door handles, call buttons, bed rails, and light switches disinfected as the final step before room clearance.</p></div></li>
+                  <li><div class="sn">5</div><div><strong>Document &amp; Verify</strong><p>Completion logged. ATP or UV verification used in facilities with enhanced infection control requirements.</p></div></li>
+                </ul>
+                <h2>Healthcare Janitorial Cleaning Frequency</h2>
+                <div class="tw"><table class="ct"><thead><tr><th>Area</th><th>Frequency</th><th>Scope</th></tr></thead><tbody><tr><td>Exam rooms</td><td>Between patients + nightly</td><td>Surface disinfection, touchpoints, floors</td></tr><tr><td>Waiting room</td><td>2&ndash;3x daily + nightly</td><td>Chairs, surfaces, floors, all touchpoints</td></tr><tr><td>Restrooms</td><td>Every 2 hrs + nightly</td><td>Full disinfection, restock supplies</td></tr><tr><td>Reception</td><td>Hourly wipe + nightly</td><td>Desk, equipment, all shared surfaces</td></tr><tr><td>Terminal clean</td><td>Per discharge</td><td>Full room ceiling to floor</td></tr></tbody></table></div>
+                <div class="icta">
+                  <div><h4>Healthcare Janitorial Cleaning Services</h4><p>View our <a href="/healthcare-cleaning.html">healthcare cleaning service</a> &mdash; terminal cleaning, certified disinfection, and flexible <a href="/janitorial-commercial-cleaning-services.html">janitorial</a> schedules.</p></div>
+                  <a href="/get-quote.html" class="b-cta-btn">Get a Free Quote <img src="/assets/images/svg/cross-arrow.svg" alt=""></a>
+                </div>
+              </div>
+            </section>
+
+            <!-- 5. FLOOR CLEANING -->
+            <section class="cat-sec" id="floor-cleaning">
+              <div class="shc">
+                <div class="shc-icon">&#x2728;</div>
+                <div>
+                  <p class="shc-ey">Commercial Floor Cleaning &amp; Maintenance</p>
+                  <h2>Commercial Floor Cleaning: Strip, Wax, Scrub &amp; Restore</h2>
+                  <div class="shc-meta"><span><i class="fas fa-clock"></i> 8 min read</span><span><i class="fas fa-tag"></i> VCT &amp; Carpet</span><span><i class="fas fa-star"></i> High ROI</span></div>
+                </div>
+              </div>
+              <div class="art">
+                <p>Professional <a href="/floor-cleaning.html">commercial floor cleaning services</a> are one of the highest-ROI components of any <a href="/janitorial-commercial-cleaning-services.html">janitorial cleaning program</a>. Neglecting floors creates slip hazards, accelerated wear, and expensive replacements that scheduled maintenance would have prevented for years.</p>
+                <div class="callout"><span class="callout-ico">&#x1F4B0;</span><p><strong>Cost insight:</strong> A properly maintained VCT floor with regular <a href="/floor-cleaning.html">strip-and-wax cleaning</a> can last 15&ndash;20 years. A neglected floor needs full replacement in 5&ndash;7 years. Preventive maintenance wins every time.</p></div>
+                <h2>VCT Floors: Strip, Wax &amp; Burnish</h2>
+                <p>Vinyl Composition Tile (VCT) is the most common commercial hard floor. Over time finish layers build up, yellow, and trap dirt &mdash; requiring the full <a href="/floor-cleaning.html">strip-and-wax cycle</a>.</p>
+                <h3>Strip &amp; Wax Process</h3>
+                <ul>
+                  <li>Apply chemical stripper to completely break down all existing finish layers</li>
+                  <li>Agitate with a low-speed floor machine and stripping pad to lift all finish</li>
+                  <li>Wet-vacuum all stripping solution &mdash; zero residue left for proper adhesion</li>
+                  <li>Neutralize the floor with a pH-neutral rinse before applying new finish</li>
+                  <li>Apply 4&ndash;6 coats of commercial-grade floor finish, each coat dried fully</li>
+                </ul>
+                <h3>Burnishing &amp; Auto-Scrubbing</h3>
+                <p>Between full <a href="/floor-cleaning.html">strip-and-wax cycles</a>, burnishing at 1,500&ndash;2,000 RPM restores shine monthly. Auto-scrubbing removes embedded grime far more effectively than mopping &mdash; a core part of any complete <a href="/janitorial-commercial-cleaning-services.html">janitorial cleaning</a> routine.</p>
+                <h2>Concrete Floor Care</h2>
+                <div class="fg">
+                  <div class="fi-card"><h4><span class="fi">&#x1F527;</span> Machine Scrubbing</h4><p>Industrial auto-scrubbers remove oil, grime, and chemical residue from concrete without saturating the surface.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x1F6E1;&#xFE0F;</span> Concrete Sealing</h4><p>A penetrating sealer every 1&ndash;2 years reduces dusting, prevents staining, and makes routine <a href="/janitorial-commercial-cleaning-services.html">janitorial cleaning</a> easier.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x1F9F9;</span> Degreasing</h4><p>Industrial zones require degreaser treatment before scrubbing &mdash; standard in any <a href="/warehouse-cleaning.html">warehouse floor cleaning</a> program.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x1F48E;</span> Polished Concrete</h4><p>Needs diamond pad maintenance and periodic repolishing to maintain finish and scratch resistance long-term.</p></div>
+                </div>
+                <h2>Carpet Extraction &amp; Maintenance</h2>
+                <p>Daily vacuuming in a <a href="/office-cleaning.html">nightly janitorial program</a> cannot remove deeply embedded soil, allergens, and bacteria. <strong>Hot water extraction</strong> injects solution deep into fibers and immediately extracts it &mdash; the industry gold standard. Schedule every 6&ndash;12 months, with encapsulation cleaning every 3&ndash;4 months in between.</p>
+                <h2>Commercial Floor Cleaning Scheduling Guide</h2>
+                <div class="tw"><table class="ct"><thead><tr><th>Floor Type</th><th>Routine Janitorial</th><th>Periodic Service</th><th>Frequency</th></tr></thead><tbody><tr><td>VCT</td><td>Daily sweep/mop</td><td><a href="/floor-cleaning.html">Strip &amp; wax</a></td><td>1&ndash;2x per year</td></tr><tr><td>VCT</td><td>Daily sweep/mop</td><td>Burnish / buff</td><td>Monthly</td></tr><tr><td>Concrete</td><td>Machine scrub</td><td>Seal / degrease</td><td>Annually</td></tr><tr><td>Carpet</td><td>Daily vacuum</td><td>Hot water extraction</td><td>Every 6&ndash;12 months</td></tr><tr><td>Carpet</td><td>Daily vacuum</td><td>Encapsulation</td><td>Every 3&ndash;4 months</td></tr><tr><td>Epoxy</td><td>Auto-scrub</td><td>Recoat / repair</td><td>Every 2&ndash;3 years</td></tr><tr><td>Ceramic / Tile</td><td>pH-neutral mop</td><td>Grout clean &amp; seal</td><td>Annually</td></tr></tbody></table></div>
+                <div class="icta">
+                  <div><h4>Commercial Floor Cleaning Services</h4><p>Explore our <a href="/floor-cleaning.html">floor cleaning service</a> &mdash; VCT <a href="/floor-cleaning.html">strip-and-wax</a>, auto-scrubbing, carpet extraction, and full floor refinishing.</p></div>
+                  <a href="/get-quote.html" class="b-cta-btn">Get a Free Quote <img src="/assets/images/svg/cross-arrow.svg" alt=""></a>
+                </div>
+              </div>
+            </section>
+
+            <!-- 6. CONSTRUCTION -->
+            <section class="cat-sec" id="construction-cleaning">
+              <div class="shc">
+                <div class="shc-icon">&#x1F3D7;&#xFE0F;</div>
+                <div>
+                  <p class="shc-ey">Post-Construction Janitorial Cleaning</p>
+                  <h2>Post-Construction Cleaning: Rough, Final &amp; Turnover Explained</h2>
+                  <div class="shc-meta"><span><i class="fas fa-clock"></i> 7 min read</span><span><i class="fas fa-tag"></i> Construction Cleanup</span><span><i class="fas fa-calendar-check"></i> 3 Phases</span></div>
+                </div>
+              </div>
+              <div class="art">
+                <p><a href="/construction-cleaning.html">Post-construction cleaning services</a> are a specialty discipline entirely outside standard <a href="/janitorial-commercial-cleaning-services.html">janitorial cleaning</a>. Construction generates drywall dust in every crack, adhesive on floors, paint overspray on windows, and debris in HVAC vents. Getting from "construction complete" to "inspection-ready" requires a phased approach by experienced technicians.</p>
+                <div class="callout"><span class="callout-ico">&#x1F3D7;&#xFE0F;</span><p><strong>Pro tip:</strong> Book your <a href="/construction-cleaning.html">post-construction cleaning</a> company <em>before</em> construction ends. Experienced teams book up fast around project completion dates &mdash; early scheduling prevents costly turnover delays.</p></div>
+                <h2>The Three Phases of Post-Construction Cleaning Services</h2>
+                <h3>Phase 1 &mdash; Rough Clean (During Construction)</h3>
+                <p>After major trades complete but before finish work begins. Goal: debris removal and job site safety &mdash; not detail cleaning.</p>
+                <ul>
+                  <li>Large debris removal &mdash; lumber scraps, drywall pieces, packaging materials</li>
+                  <li>Sweeping and vacuuming all concrete subfloors and structural surfaces</li>
+                  <li>Clearing stairwells and hallways for other trades working on-site</li>
+                  <li>Basic wipe-down of window frames and rough openings</li>
+                </ul>
+                <h3>Phase 2 &mdash; Final Clean (After 100% Completion)</h3>
+                <p>The most labor-intensive phase of <a href="/construction-cleaning.html">post-construction cleaning</a> &mdash; every surface in the facility from ceiling to floor:</p>
+                <ul class="steps">
+                  <li><div class="sn">1</div><div><strong>Ceiling &amp; High Surfaces First</strong><p>Light fixtures, HVAC diffusers, and sprinkler heads wiped before anything else &mdash; dust must come down from the top before lower surfaces are cleaned.</p></div></li>
+                  <li><div class="sn">2</div><div><strong>Walls, Doors &amp; Frames</strong><p>Paint overspray, adhesive, tape residue, and smudges removed from all surfaces and hardware throughout the facility.</p></div></li>
+                  <li><div class="sn">3</div><div><strong>Windows &amp; Interior Glass</strong><p>Construction labels, paint spots, and protective film removed. Frames and sills polished to a finished appearance.</p></div></li>
+                  <li><div class="sn">4</div><div><strong>Fixtures, Cabinetry &amp; Millwork</strong><p>Protective film removed, all surfaces cleaned and inspected for damage documentation for the punch list.</p></div></li>
+                  <li><div class="sn">5</div><div><strong>Floors</strong><p>Hard floors swept and mopped, adhesive and grout haze removed. Initial <a href="/floor-cleaning.html">floor finish applied to VCT</a> if specified in the scope.</p></div></li>
+                </ul>
+                <h3>Phase 3 &mdash; Turnover Clean (24&ndash;48 Hours Before Occupancy)</h3>
+                <p>Addresses dust, smudges, and fingerprints created between the final clean and move-in day &mdash; including re-dusting surfaces, re-cleaning glass, final floor mop, restroom restocking, and wall spot-cleaning.</p>
+                <h2>Who Needs Post-Construction Cleaning?</h2>
+                <div class="fg">
+                  <div class="fi-card"><h4><span class="fi">&#x1F3E2;</span> New Construction</h4><p>All three phases required before a certificate of occupancy is issued on any commercial build.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x1F528;</span> Office Build-Outs</h4><p>Suite renovations generate significant dust requiring final and turnover <a href="/construction-cleaning.html">construction cleaning</a>.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x1F6CD;&#xFE0F;</span> Retail Tenant Improvements</h4><p>Tenant improvements typically require a <a href="/construction-cleaning.html">final construction clean</a> before CO is issued by the city.</p></div>
+                  <div class="fi-card"><h4><span class="fi">&#x1F3ED;</span> Industrial Expansions</h4><p><a href="/warehouse-cleaning.html">Warehouse</a> additions and dock expansions create debris that must be professionally removed before operations resume.</p></div>
+                </div>
+                <div class="icta">
+                  <div><h4>Post-Construction Cleaning Services</h4><p>View our <a href="/construction-cleaning.html">construction cleaning service</a> &mdash; we coordinate with your GC and deliver inspection-ready <a href="/janitorial-commercial-cleaning-services.html">commercial cleaning</a> on schedule.</p></div>
+                  <a href="/get-quote.html" class="b-cta-btn">Get a Free Quote <img src="/assets/images/svg/cross-arrow.svg" alt=""></a>
+                </div>
+              </div>
+            </section>
+
+          </div><!-- col-lg-8 -->
+
+          <!-- SIDEBAR -->
+          <div class="col-lg-4 pt-4">
+            <aside class="sb" aria-label="Navigation and services">
+              <div class="sb-card">
+                <h4><i class="fas fa-layer-group me-2"></i>All Cleaning Guides</h4>
+                <ul class="toc-list">
+                  <li><a href="#office-cleaning">&#x1F3E2;&nbsp; Office Janitorial Cleaning</a></li>
+                  <li><a href="#warehouse-cleaning">&#x1F3ED;&nbsp; Warehouse Janitorial Cleaning</a></li>
+                  <li><a href="#data-center-cleaning">&#x1F4BB;&nbsp; Data Center Cleaning</a></li>
+                  <li><a href="#healthcare-cleaning">&#x1F3E5;&nbsp; Healthcare Janitorial Cleaning</a></li>
+                  <li><a href="#floor-cleaning">&#x2728;&nbsp; Commercial Floor Cleaning</a></li>
+                  <li><a href="#construction-cleaning">&#x1F3D7;&#xFE0F;&nbsp; Post-Construction Cleaning</a></li>
+                </ul>
+                <a href="/janitorial-commercial-cleaning-services.html" class="toc-all"><i class="fas fa-broom" style="font-size:12px"></i>&nbsp; All Janitorial Services &rarr;</a>
+              </div>
+              <div class="sb-cta">
+                <h4>Get a Free Quote</h4>
+                <p>Tell us about your facility. We'll build a custom <a href="/janitorial-commercial-cleaning-services.html">janitorial cleaning plan</a> and respond within one business day.</p>
+                <a href="/get-quote.html" class="b-sb-btn">Request a Quote <img src="/assets/images/svg/cross-arrow.svg" alt=""></a>
+              </div>
+              <div class="sb-card">
+                <h4><i class="fas fa-broom me-2"></i>Our Janitorial Services</h4>
+                <a href="/office-cleaning.html"       class="svc-row"><div class="sico">&#x1F3E2;</div><div><span class="sn2">Office Janitorial Cleaning</span><span class="ss2">Nightly &amp; day porter service</span></div></a>
+                <a href="/warehouse-cleaning.html"    class="svc-row"><div class="sico">&#x1F3ED;</div><div><span class="sn2">Warehouse Janitorial Cleaning</span><span class="ss2">Industrial &amp; OSHA-compliant</span></div></a>
+                <a href="/data-center-cleaning.html"  class="svc-row"><div class="sico">&#x1F4BB;</div><div><span class="sn2">Data Center Cleaning</span><span class="ss2">Anti-static &amp; ISO-aligned</span></div></a>
+                <a href="/healthcare-cleaning.html"   class="svc-row"><div class="sico">&#x1F3E5;</div><div><span class="sn2">Healthcare Janitorial Cleaning</span><span class="ss2">Terminal cleaning &amp; disinfection</span></div></a>
+                <a href="/floor-cleaning.html"        class="svc-row"><div class="sico">&#x2728;</div><div><span class="sn2">Commercial Floor Cleaning</span><span class="ss2">Strip, wax, scrub &amp; restore</span></div></a>
+                <a href="/construction-cleaning.html" class="svc-row"><div class="sico">&#x1F3D7;&#xFE0F;</div><div><span class="sn2">Post-Construction Cleaning</span><span class="ss2">Rough, final &amp; turnover cleans</span></div></a>
+                <a href="/janitorial-commercial-cleaning-services.html" class="sb-all"><i class="fas fa-list" style="font-size:12px"></i>&nbsp; All Janitorial Cleaning Services &rarr;</a>
+              </div>
+              <div class="sb-card">
+                <h4><i class="fas fa-phone-alt me-2"></i>Contact Us</h4>
+                <div class="sb-contact">
+                  <a href="tel:+16363893148"><i class="fas fa-phone-alt" style="color:var(--navy)"></i> (636) 389-3148</a>
+                  <a href="/cdn-cgi/l/email-protection#aac3c4ccc5eac8cfc6c9c6cfcbc4c3c4cd84c9c5c7"><i class="fas fa-envelope" style="color:var(--blue)"></i> <span class="__cf_email__" data-cfemail="442d2a222b04262128272821252a2d2a236a272b29">[email&#160;protected]</span></a>
+                </div>
+              </div>
+            </aside>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- FINAL CTA -->
+    <section class="fcta" aria-labelledby="cta-h">
+      <div class="container">
+        <h2 id="cta-h">Ready for Professional Janitorial Cleaning Services?</h2>
+        <p>Get a free, no-obligation quote for <a href="/janitorial-commercial-cleaning-services.html">janitorial cleaning services</a> tailored to your facility's size, type, and schedule. Bel Cleaning responds within one business day.</p>
+        <div class="fcta-btns">
+          <a href="/get-quote.html" class="b-primary">Request a Free Quote <img src="/assets/images/svg/cross-arrow.svg" alt=""></a>
+          <a href="tel:+16363893148" class="b-ghost"><i class="fas fa-phone-alt"></i> (636) 389-3148</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer" data-include="/assets/includes/footer.html"></div>
+
+  <script src="/assets/javascript/jquery.js"></script>
+  <script src="/assets/javascript/bootstrap.min.js"></script>
+  <script src="/assets/javascript/smooth-scroll.js"></script>
+  <script src="/assets/js/partials.js"></script>
+  <script src="/assets/js/page-init.js"></script>
+  <script>
+    (function(){var l=document.querySelector('.page-loader');function h(){if(l)l.classList.add('hide');}if(document.readyState==='complete'){h();}else{window.addEventListener('load',h);}setTimeout(h,3000);})();
+    (function(){var els=document.querySelectorAll('.fade_up');if(!els.length||!('IntersectionObserver' in window))return;var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-visible');obs.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:0.08});els.forEach(function(el){obs.observe(el);});})();
+    document.querySelectorAll('a[href^="#"]').forEach(function(link){link.addEventListener('click',function(e){var t=document.querySelector(this.getAttribute('href'));if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-130,behavior:'smooth'});}});});
+  </script>
+
+</body>
+</html>

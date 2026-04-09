@@ -1,0 +1,395 @@
+<!-- Header Navigation -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="/">
+        <img src="/assets/images/logo.png" alt="Bel Cleaning Logo" height="50">
+      </a>
+      
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/janitorial-commercial-cleaning-services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/office-cleaning.html">
+                <span class="dropdown-icon">🏢</span>
+                <div>
+                  <strong>Office Cleaning</strong>
+                  <small>Corporate & Multi-tenant Buildings</small>
+                </div>
+              </a></li>
+              <li><a class="dropdown-item" href="/warehouse-cleaning.html">
+                <span class="dropdown-icon">🏭</span>
+                <div>
+                  <strong>Warehouse Cleaning</strong>
+                  <small>Industrial & High-Dust Removal</small>
+                </div>
+              </a></li>
+              <li><a class="dropdown-item" href="/data-center-cleaning.html">
+                <span class="dropdown-icon">💻</span>
+                <div>
+                  <strong>Data Center Cleaning</strong>
+                  <small>Anti-Static & Critical Environment</small>
+                </div>
+              </a></li>
+              <li><a class="dropdown-item" href="/healthcare-cleaning.html">
+                <span class="dropdown-icon">🏥</span>
+                <div>
+                  <strong>Healthcare Cleaning</strong>
+                  <small>Medical Offices & Clinics</small>
+                </div>
+              </a></li>
+              <li><a class="dropdown-item" href="/floor-cleaning.html">
+                <span class="dropdown-icon">✨</span>
+                <div>
+                  <strong>Floor Maintenance</strong>
+                  <small>Strip, Wax & Refinishing</small>
+                </div>
+              </a></li>
+              <li><a class="dropdown-item" href="/construction-cleaning.html">
+                <span class="dropdown-icon">🔨</span>
+                <div>
+                  <strong>Construction Cleaning</strong>
+                  <small>Post-Construction & Turnover</small>
+                </div>
+              </a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item view-all" href="/janitorial-commercial-cleaning-services.html">
+                <strong>View All Services →</strong>
+              </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/commercial-cleaning-franchise.html">Franchise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/commercial-cleaning-job.html">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-quote-nav" href="/get-quote.html">Get Quote</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<style>
+  /* ============================================
+     HEADER STYLES
+     ============================================ */
+  .site-header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  .site-header.scrolled {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
+  
+  .navbar {
+    padding: 1rem 0;
+  }
+  
+  .navbar-brand img {
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-brand:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* ============================================
+     NAVIGATION LINKS
+     ============================================ */
+  .nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #1a365d;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: #1a365d;
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 60%;
+  }
+  
+  /* ============================================
+     GET QUOTE BUTTON
+     ============================================ */
+  .btn-quote-nav {
+    background: linear-gradient(135deg, #1a365d 0%, #2d5a87 100%);
+    color: #fff !important;
+    border-radius: 5px;
+    margin-left: 1rem;
+    padding: 0.6rem 1.5rem !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .btn-quote-nav::after {
+    display: none;
+  }
+  
+  .btn-quote-nav:hover {
+    background: #fff;
+    color: #1a365d !important;
+    border-color: #1a365d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.3);
+  }
+  
+  /* ============================================
+     DROPDOWN MENU
+     ============================================ */
+  .dropdown-menu {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    min-width: 280px;
+    margin-top: 0.5rem;
+  }
+  
+  .dropdown-item {
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-left: 3px solid transparent;
+  }
+  
+  .dropdown-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+  
+  .dropdown-item div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown-item strong {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  
+  .dropdown-item small {
+    color: #666;
+    font-size: 12px;
+  }
+  
+  .dropdown-item:hover {
+    background: linear-gradient(90deg, rgba(26, 54, 93, 0.05) 0%, rgba(26, 54, 93, 0.02) 100%);
+    border-left-color: #1a365d;
+    padding-left: 1.75rem;
+  }
+  
+  .dropdown-item:hover strong {
+    color: #1a365d;
+  }
+  
+  .dropdown-divider {
+    margin: 0.5rem 0;
+    border-top: 1px solid #eee;
+  }
+  
+  .dropdown-item.view-all {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    margin: 0.5rem;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    border-left: none;
+  }
+  
+  .dropdown-item.view-all:hover {
+    background: linear-gradient(135deg, #1a365d 0%, #2d5a87 100%);
+    padding-left: 1.5rem;
+  }
+  
+  .dropdown-item.view-all strong {
+    color: #1a365d;
+    font-size: 14px;
+  }
+  
+  .dropdown-item.view-all:hover strong {
+    color: #fff;
+  }
+  
+  /* ============================================
+     MOBILE TOGGLE BUTTON
+     ============================================ */
+  .navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1);
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(26, 54, 93, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 28px;
+    height: 28px;
+  }
+  
+  /* ============================================
+     MOBILE RESPONSIVE
+     ============================================ */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      background: #fff;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .nav-link {
+      padding: 0.75rem 1rem;
+    }
+    
+    .nav-link::after {
+      display: none;
+    }
+    
+    .btn-quote-nav {
+      margin-left: 0;
+      margin-top: 0.5rem;
+      display: block;
+      text-align: center;
+    }
+    
+    .dropdown-menu {
+      border: none;
+      box-shadow: none;
+      background: #f8f9fa;
+      margin-top: 0;
+      padding: 0.5rem 0;
+    }
+    
+    .dropdown-item {
+      padding: 0.75rem 1rem;
+    }
+    
+    .dropdown-item:hover {
+      background: #fff;
+      padding-left: 1.25rem;
+    }
+    
+    .nav-item.dropdown .dropdown-toggle::after {
+      float: right;
+      margin-top: 8px;
+    }
+  }
+  
+  /* ============================================
+     ACCESSIBILITY
+     ============================================ */
+  @media (prefers-reduced-motion: reduce) {
+    .nav-link,
+    .btn-quote-nav,
+    .dropdown-item,
+    .navbar-brand img {
+      transition: none;
+    }
+  }
+  
+  /* ============================================
+     ACTIVE PAGE INDICATOR
+     ============================================ */
+  .nav-item .nav-link.active {
+    font-weight: 600;
+  }
+</style>
+
+<script>
+  // Header scroll effect
+  window.addEventListener('scroll', function() {
+    var header = document.querySelector('.site-header');
+    if (header) {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }
+  });
+  
+  // Set active nav link based on current page
+  document.addEventListener('DOMContentLoaded', function() {
+    var currentPath = window.location.pathname;
+    var navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(function(link) {
+      link.classList.remove('active');
+      var linkPath = link.getAttribute('href');
+      
+      // Check if current page matches this link
+      if (linkPath === currentPath || (currentPath === '/' && linkPath === '/')) {
+        link.classList.add('active');
+      }
+    });
+    
+    // Close mobile menu when clicking a link
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    var navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
+          var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: true
+          });
+        }
+      });
+    });
+  });
+</script>

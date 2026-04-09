@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Solution</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/svg/favicon.svg">
+    <link rel="stylesheet" href="assets/css/swap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media_query.css">
+</head>
+
+<body>
+    <!-- ====================================== Preloader ===================================== -->
+    <div class="page-loader">
+        <div class="leap-frog">
+            <div class="leap-frog__dot"></div>
+            <div class="leap-frog__dot"></div>
+            <div class="leap-frog__dot"></div>
+        </div>
+    </div>
+    <!-- ====================================== Header ===================================== -->
+    <div class="overlay" id="overlay"></div>
+    <header class="header" id="top-navbar">
+        <div class="header-container">
+            <a href="index-slider.html" class="logo">
+                <img src="assets/images/svg/logo.svg" alt="Logo">
+            </a>
+            <div class="hamburger" id="hamburger">
+                <img src="assets/images/svg/menu2.svg" class="menu-icon" alt="menu2">
+                <img src="assets/images/svg/close-icon.svg" alt="close-icon" class="close-icon">
+            </div>
+            <nav class="nav" id="main-menu">
+                <img class="dsad" src="assets/images/home/dsad.png" alt="dsad">
+                <div class="for-mobile-menu position-relative">
+                    <a href="index-slider.html" class="mobile-logo">
+                        <img src="assets/images/svg/logo.svg" alt="Logo">
+                    </a>
+                    <ul class="menu">
+                        <li class="dropdown">
+                            <a href="javascript:void(0);">Home <img src="assets/images/svg/dropdown-arrow.svg"
+                                    alt="dropdown-arrow">
+                                <span class="dots-circle"></span>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="index-slider.html">Home Slider</a></li>
+                                <li><a href="index-video.html">Home Video</a></li>
+                                <li><a href="index-solid.html">Home Solid</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);">Pages
+                                <img src="assets/images/svg/dropdown-arrow.svg" alt="dropdown-arrow">
+                                <span class="dots-circle"></span>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="team.html">Our Team</a></li>
+                                <li><a href="team-details.html">Team Details</a></li>
+                                <li><a href="pricing-plan.html">Pricing Plan</a></li>
+                                <li><a href="our-clients.html">Our Clients</a></li>
+                                <li><a href="testimonials.html">Testimonials</a></li>
+                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="get-quote.html">Get Your Quote</a></li>
+                                <li><a href="error404.html">404 Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);">Services
+                                <img src="assets/images/svg/dropdown-arrow.svg" alt="dropdown-arrow">
+                                <span class="dots-circle"></span>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="house-cleaning.html">House Cleaning</a></li>
+                                <li><a href="kitchen-cleaning.html">Kitchen Cleaning</a></li>
+                                <li><a href="office-cleaning.html">Office Cleaning</a></li>
+                                <li><a href="window-cleaning.html">Window Cleaning</a></li>
+                                <li><a href="corporate-cleaning.html">Corporate Cleaning</a></li>
+                                <li><a href="carpet-cleaning.html">Carpet Cleaning</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);">Projects
+                                <img src="assets/images/svg/dropdown-arrow.svg" alt="dropdown-arrow">
+                                <span class="dots-circle"></span>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="project1.html">Project 1</a></li>
+                                <li><a href="project2.html">Project 2</a></li>
+                                <li><a href="project3.html">Project 3</a></li>
+                                <li><a href="project1-single.html">Single Project 1</a></li>
+                                <li><a href="project2-single.html">Single Project 2</a></li>
+                                <li><a href="project3-single.html">Single Project 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);">Blogs
+                                <img src="assets/images/svg/dropdown-arrow.svg" alt="dropdown-arrow">
+                                <span class="dots-circle"></span>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="our-blog.html">Blog 1</a></li>
+                                <li><a href="blog2.html">Blog 2</a></li>
+                                <li><a href="blog3.html">Blog 3</a></li>
+                                <li><a href="blog-details1.html">Blog Details 1 </a></li>
+                                <li><a href="blog-details2.html">Blog Details 2</a></li>
+                                <li><a href="blog-details3.html">Blog Details 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-actions">
+                    <div class="call">
+                        <div class="headphone-main">
+                            <img src="assets/images/svg/headphone-icon.svg" alt="headphone-icon">
+                        </div>
+                        <div class="need-help-main">
+                            <p>Need Help Now?</p>
+                            <a href="tel:+12483578866">+1 (248) 357 8866</a>
+                        </div>
+                    </div>
+                    <a href="get-quote.html" class="btn-quote get-quote-btn">Get A Quote
+                        <img src="assets/images/svg/cross-arrow.svg" alt="cross-arrow">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- ====================================== About Hero Section ===================================== -->
+    <section class="heroSection">
+        <div class="container">
+            <h1 class="img-header-text fade_down">House Cleaning</h1>
+            <div class="breadcrumb-group fade_up">
+                <a href="index-slider.html">HOME / </a>
+                <a href="services.html">Service / </a>
+                <a href="house-cleaning.html">House Cleaning</a>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== Section Nine ===================================== -->
+    <section class="section-eight">
+        <div class="container">
+            <div class="row all-services-row">
+                <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12">
+                    <h2 class="sec-text pb-0 fade_up">Affordable House Cleaning Solutions</h2>
+                    <img class="layers-img1 zoom_in" src="assets/images/house-cleaning/house-clening-img1.jpg"
+                        alt="house-clening-img1">
+                    <p class="fusce pb-2">Volutpat et malesuada maecenas amet. Ultrices volutpat auctor euismod eget
+                        pulvinar nulla porttitor. Faucibus faucibus consectetur et tellus magnis. Nunc proin mauris enim
+                        duis aliquet fringilla. Erat semper amet turpis cursus. Vel tellus tellus risus eu lacus
+                        volutpat morbi. Cursus tincidunt urna condimentum egestas integer.</p>
+                    <p class="fusce mt-0 ">Purus auctor eu rhoncus mi enim facilisi. In suspendisse libero
+                        suspendisse lacinia vulputate faucibus fusce. Blandit ultrices morbi eu rhoncus amet at.
+                        Placerat in mi id dolor odio nulla. Feugiat in volutpat iaculis sit. Tincidunt gravida enim eget
+                        arcu turpis sed nunc metus est. Purus sed elementum tristique sit malesuada sagittis odio. Ipsum
+                        dolor enim nulla sed nulla dignissim. Tincidunt quam tellus vitae hac scelerisque massa.
+                        Condimentum sit interdum eget vel congue egestas pretium.</p>
+                    <h3 class="ourServicesPrcoes mt-0">We Hope You Find What You are Looking for</h3>
+                    <p class="fusce pb-0">Volutpat et malesuada maecenas amet. Ultrices volutpat auctor euismod eget
+                        pulvinar nulla porttitor. Faucibus faucibus consectetur et tellus magnis. Nunc proin mauris enim
+                        duis aliquet fringilla. Erat semper amet turpis cursus. Vel tellus tellus risus eu lacus
+                        volutpat morbi. Cursus tincidunt urna condimentum egestas integer.</p>
+                    <div class="swiper singleServicesSlider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/images/house-cleaning/house-clening-img2.jpg" alt="house-clening-img2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/house-cleaning/house-clening-img3.jpg" alt="house-clening-img3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/house-cleaning/house-clening-img4.jpg" alt="house-clening-img4">
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="ourServicesPrcoes mt-0">Ipsum eget non faucibus platea vel euismod dui ut</h3>
+                    <p class="fusce">Purus auctor eu rhoncus mi enim facilisi. In suspendisse libero
+                        suspendisse lacinia vulputate faucibus fusce. Blandit ultrices morbi eu rhoncus amet at.
+                        Placerat in mi id dolor odio nulla. Feugiat in volutpat iaculis sit. Tincidunt gravida enim eget
+                        arcu turpis sed nunc metus est. Purus sed elementum tristique sit malesuada sagittis odio. Ipsum
+                        dolor enim nulla sed nulla dignissim. Tincidunt quam tellus vitae hac scelerisque massa.
+                        Condimentum sit interdum eget vel congue egestas pretium.</p>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What are the most common Cleaning materials?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras
+                                    ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt.
+                                    Augue neque gravida in fermentum et sollicitudin.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What causes Cleaning leaks?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras
+                                    ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt.
+                                    Augue neque gravida in fermentum et sollicitudin.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Can I Cleaning myself?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras
+                                    ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt.
+                                    Augue neque gravida in fermentum et sollicitudin.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    What services do architects provide?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras
+                                    ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt.
+                                    Augue neque gravida in fermentum et sollicitudin.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button mb-0 collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Can A Handyman Do Cleaning Work?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras
+                                    ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt.
+                                    Augue neque gravida in fermentum et sollicitudin.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-8 all-service-col">
+                    <div class="services-list-box zoom_in">
+                        <h2 class="all-service-text">Our All Service</h2>
+                        <div class="roofing-services-list-main">
+                            <a href="house-cleaning.html" class="service-list-arow-main active">
+                                <p>House Cleaning</p>
+                                <img src="assets/images/svg/cross-arrow.svg" alt="right-arrow">
+                            </a>
+                            <a href="kitchen-cleaning.html" class="service-list-arow-main">
+                                <p>Kitchen Cleaning</p>
+                                <img src="assets/images/svg/cross-arrow.svg" alt="right-arrow">
+                            </a>
+                            <a href="office-cleaning.html" class="service-list-arow-main">
+                                <p>Office Cleaning</p>
+                                <img src="assets/images/svg/cross-arrow.svg" alt="right-arrow">
+                            </a>
+                            <a href="window-cleaning.html" class="service-list-arow-main">
+                                <p>Window Cleaning</p>
+                                <img src="assets/images/svg/cross-arrow.svg" alt="right-arrow">
+                            </a>
+                            <a href="roof-solar-panels.html" class="service-list-arow-main">
+                                <p>Carpet Cleaning</p>
+                                <img src="assets/images/svg/cross-arrow.svg" alt="right-arrow">
+                            </a>
+                            <a href="corporate-cleaning.html" class="service-list-arow-main mb-0">
+                                <p>Corporate Cleaning</p>
+                                <img src="assets/images/svg/cross-arrow.svg" alt="right-arrow">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-adds-main zoom_in">
+                        <div class="adds-details-main">
+                            <img class="adds-img-home w-100" src="assets/images/house-cleaning/add-img.jpg"
+                                alt="adds-img-home">
+                            <img class="shape-img" src="assets/images/house-cleaning/download.png" alt="download">
+                            <h3>Get 10% Off on Your First Service</h3>
+                            <a href="contact.html" class="btn-quote">Contact Us
+                                <img src="assets/images/svg/cross-arrow.svg" alt="cross-arrow">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="documents-box zoom_in">
+                        <a href="#" class="brochure-main">
+                            <div class="brochure">
+                                <img src="assets/images/svg/brochure.svg" alt="brochure">
+                            </div>
+                            <h3>Cleaning Models.doc</h3>
+                        </a>
+                        <a href="#" class="brochure-main mb-0">
+                            <div class="brochure">
+                                <img src="assets/images/svg/brochure2.svg" alt="brochure2">
+                            </div>
+                            <h3>Service Details.pdf</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== Section Form ===================================== -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="row form-sec-row">
+                <div class="col-xxl-6 col-xl-6 col-lg-5">
+                    <p class="cap-text fade_up">contact home rakshak</p>
+                    <h2 class="sec-text get-toch fade_up">Get In Touch With Us</h2>
+                    <p class="sec-sub-text fade_up">Vel orci ullamcorper adipiscing nisl ac sed ut. In arcu morbi morbi
+                        euismod auctor nulla nunc adipiscing et aliquet vestibulum.</p>
+                    <p class="call-support-text">Call Support Center 24/7</p>
+                    <a href="tel:+18042568899" class="tel-num">+1 804 256 8899</a>
+                    <div class="adres-main-home fade_up">
+                        <div>
+                            <p class="call-support-text">Our Address</p>
+                            <p class="tel-num addees">12 Luc Lake City, NY, USA</p>
+                        </div>
+                        <div>
+                            <p class="call-support-text">Our Mail Address</p>
+                            <a href="mailto:homerakshak@mail.com" class="tel-num addees">homerakshak@mail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-7">
+                    <div class="contac-form-main zoom_in">
+                        <div class="calcult-from-grid contac-form">
+                            <div>
+                                <h3 class="input-label-text">Full Name*</h3>
+                                <input type="text" placeholder="Enter your full name" name="full name"
+                                    autocomplete="off">
+                            </div>
+                            <div>
+                                <h3 class="input-label-text">email address*</h3>
+                                <input type="email" placeholder="Enter your email" name="email" autocomplete="off">
+                            </div>
+                            <div>
+                                <h3 class="input-label-text">phone number*</h3>
+                                <input type="text" placeholder="Enter phone number" name="phone" autocomplete="off">
+                            </div>
+                            <div>
+                                <h3 class="input-label-text">choose cleaning area*</h3>
+                                <div class="input-main">
+                                    <div class="wrapper">
+                                        <div class="formDropDown">Choose from list
+                                            <img class="arrow-icon-form" src="assets/images/svg/dropdown-arrow.svg"
+                                                alt="arrow-icon-form">
+                                        </div>
+                                        <div class="position-relative">
+                                            <ul class="formDropDown-ul-list">
+                                                <li><a href="javascript:void(0)">Full Cleaning</a></li>
+                                                <li><a href="javascript:void(0)">House Cleaning</a></li>
+                                                <li><a href="javascript:void(0)">Kitchen Cleaning</a></li>
+                                                <li><a href="javascript:void(0)">Office Cleaning</a></li>
+                                                <li><a href="javascript:void(0)">Window Cleaning</a></li>
+                                                <li><a href="javascript:void(0)">Corporate Cleaning</a></li>
+                                                <li><a href="javascript:void(0)">Carpet Cleaning</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="your-message-input">
+                            <h3 class="input-label-text">your message</h3>
+                            <input type="text" placeholder="Write here" name="message" autocomplete="off">
+                        </div>
+                        <div class="get-cost-estimate send-main-btn">
+                            <a href="#" class="btn-quote">Send Us Your Mail
+                                <img src="assets/images/svg/cross-arrow.svg" alt="cross-arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================== Footer Section ===================================== -->
+    <footer>
+        <div class="container">
+            <div class="subscribe-section">
+                <h2 class="sec-text updat pb-0">Sign Up To Get Updates And News About Us.</h2>
+                <div class="subscribe-input-main">
+                    <input type="text" placeholder="Enter phone number" name="subscribe">
+                    <a href="#" class="btn-quote">Subscribe Now
+                        <img src="assets/images/svg/cross-arrow.svg" alt="cross-arrow">
+                    </a>
+                </div>
+            </div>
+            <div class="row footer-row-quick">
+                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6">
+                    <h2 class="working-hours">Working Hours</h2>
+                    <div class="timing-hrw pt-0">
+                        <p>Mon - Fri</p>
+                        <p>8:00 AM - 5:00 PM</p>
+                    </div>
+                    <div class="timing-hrw">
+                        <p>Saturday</p>
+                        <p>8:00 AM - 3:00 PM</p>
+                    </div>
+                    <div class="timing-hrw border-0 pb-0">
+                        <p>Sunday</p>
+                        <p>Close</p>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 quicklinks-main">
+                    <div>
+                        <h2 class="working-hours">Our Services</h2>
+                        <ul>
+                            <li><a href="house-cleaning.html">House Cleaning</a></li>
+                            <li><a href="kitchen-cleaning.html">Kitchen Cleaning</a></li>
+                            <li><a href="window-cleaning.html">Window Cleaning</a></li>
+                            <li><a href="office-cleaning.html">Office Cleaning</a></li>
+                            <li><a href="carpet-cleaning.html">Carpet Cleaning</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="working-hours">Quick Links</h2>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="pricing-plan.html">Pricing Plan</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4">
+                    <h2 class="working-hours">Instagram Posts</h2>
+                    <div class="footer-img-group">
+                        <a href="https://www.instagram.com" class="img-container">
+                            <img class="footer-imgs" src="assets/images/footer/footer-img1.jpg" alt="footer-img1">
+                            <div class="footer-img-overlay">
+                                <img src="assets/images/svg/insta.svg" class="brand-instagram" alt="brand-instagram">
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com" class="img-container">
+                            <img class="footer-imgs" src="assets/images/footer/footer-img2.jpg" alt="footer-img2">
+                            <div class="footer-img-overlay">
+                                <img src="assets/images/svg/insta.svg" class="brand-instagram" alt="brand-instagram">
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com" class="img-container">
+                            <img class="footer-imgs" src="assets/images/footer/footer-img3.jpg" alt="footer-img3">
+                            <div class="footer-img-overlay">
+                                <img src="assets/images/svg/insta.svg" class="brand-instagram" alt="brand-instagram">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="media-logo-call-footer fade_up">
+                <a href="index-slider.html">
+                    <img src="assets/images/svg/white-logo.svg" alt="white-logo">
+                </a>
+                <div class="call-detl">
+                    <div class="img-main-call">
+                        <img src="assets/images/svg/callWhite.svg" alt="callWhite">
+                    </div>
+                    <div>
+                        <p>CALL US NOW!</p>
+                        <a href="tel:+13457869999">+1 345-786-9999</a>
+                    </div>
+                </div>
+                <div class="footer-med-icons-main">
+                    <a href="https://www.facebook.com" class="footer-med-icons">
+                        <img src="assets/images/svg/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="https://x.com" class="footer-med-icons">
+                        <img src="assets/images/svg/twitter.svg" alt="twiiter">
+                    </a>
+                    <a href="https://www.instagram.com" class="footer-med-icons">
+                        <img src="assets/images/svg/insta.svg" alt="insta">
+                    </a>
+                    <a href="https://wa.me/+1234567890" class="footer-med-icons">
+                        <img src="assets/images/svg/whatsapp.svg" alt="whatsapp">
+                    </a>
+                </div>
+            </div>
+            <div class="copyrights-main">
+                <p>Copyright © 2024 All Rights Reserved by <a href="https://1.envato.market/website-portfolio"
+                        target="_blank">The_Krishna</a>
+                </p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- ====================== Bottom To Top Button ======================= -->
+    <button class="bottom-top-button">↑</button>
+    <script src="assets/javascript/jquery.js"></script>
+    <script src="assets/javascript/bootstrap.min.js"></script>
+    <script src="assets/javascript/swiper-bundle.min.js"></script>
+    <script src="assets/javascript/smooth-scroll.js"></script>
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
