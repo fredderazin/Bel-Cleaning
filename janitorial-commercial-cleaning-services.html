@@ -21,6 +21,15 @@
   <link rel="stylesheet" href="/assets/css/swiper.min.css">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/media_query.css">
+
+  <style>
+    .faq-item { border-bottom: 1px solid #e0e0e0; }
+    .faq-question { width: 100%; text-align: left; background: none; border: none; padding: 1.2rem 0; font-size: 1.1rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-arrow { transition: transform 0.3s; }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .faq-item.open .faq-answer { max-height: 500px; }
+  </style>
 </head>
 <body>
   <!-- Preloader -->
@@ -134,90 +143,50 @@
           </p>
 
           <!-- FAQ Accordion -->
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  What are the most important office cleaning tasks?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show"
-                   aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  The biggest impact comes from consistent restroom and breakroom cleaning, high-touch surface
-                  disinfection, dusting, and floor care. These areas drive most complaints and health risks, so our
-                  office cleaning checklist is designed to keep them looking and smelling clean every day.
-                </div>
-              </div>
+          <!-- FAQ Section -->
+          <div class="faq-item open">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+              What are the most important office cleaning tasks?
+              <span class="faq-arrow">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+              <p>The biggest impact comes from consistent restroom and breakroom cleaning, high-touch surface disinfection, dusting, and floor care. These areas drive most complaints and health risks, so our office cleaning checklist is designed to keep them looking and smelling clean every day.</p>
             </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  How often should our office be cleaned?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse"
-                   aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Most offices benefit from nightly cleaning, especially if team members are on-site every day or if
-                  you see regular client traffic. Smaller or hybrid offices sometimes choose two or three cleans per
-                  week, then add a day porter or extra visits during peak season or special events as needed.
-                </div>
-              </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+              How often should our office be cleaned?
+              <span class="faq-arrow">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+              <p>Most offices benefit from nightly cleaning, especially if team members are on-site every day or if you see regular client traffic. Smaller or hybrid offices sometimes choose two or three cleans per week, then add a day porter or extra visits during peak season or special events as needed.</p>
             </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Can we schedule after-hours or weekend office cleaning?
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse"
-                   aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Yes. Most of our office cleaning is performed after-hours or on weekends to avoid disrupting your
-                  employees. Our crews follow your security procedures, key-control policies, and alarm instructions,
-                  and we coordinate with building management in multi-tenant properties where needed.
-                </div>
-              </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+              Can we schedule after-hours or weekend office cleaning?
+              <span class="faq-arrow">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Most of our office cleaning is performed after-hours or on weekends to avoid disrupting your employees. Our crews follow your security procedures, key-control policies, and alarm instructions, and we coordinate with building management in multi-tenant properties where needed.</p>
             </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFive">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                  Which office areas do you focus on the most?
-                </button>
-              </h2>
-              <div id="collapseFive" class="accordion-collapse collapse"
-                   aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  We prioritize the areas your staff and visitors notice first: reception and lobby spaces, restrooms,
-                  hallways, and breakrooms. We also follow your policy on desk and personal spaces to respect privacy
-                  while still keeping surfaces tidy and sanitary.
-                </div>
-              </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+              Which office areas do you focus on the most?
+              <span class="faq-arrow">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+              <p>We prioritize the areas your staff and visitors notice first: reception and lobby spaces, restrooms, hallways, and breakrooms. We also follow your policy on desk and personal spaces to respect privacy while still keeping surfaces tidy and sanitary.</p>
             </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingSix">
-                <button class="accordion-button mb-0 collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                  Can your team handle special requests or extra tasks?
-                </button>
-              </h2>
-              <div id="collapseSix" class="accordion-collapse collapse"
-                   aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  In many cases, yes. We can often assist with light extra tasks such as preparing meeting rooms,
-                  restocking kitchen supplies, or adjusting schedules for events. Larger maintenance projects can be
-                  coordinated with your facility manager or our trusted partners to ensure safety and proper oversight.
-                </div>
-              </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+              Can your team handle special requests or extra tasks?
+              <span class="faq-arrow">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+              <p>In many cases, yes. We can often assist with light extra tasks such as preparing meeting rooms, restocking kitchen supplies, or adjusting schedules for events. Larger maintenance projects can be coordinated with your facility manager or our trusted partners to ensure safety and proper oversight.</p>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // -- Intersection Observer – fade/zoom animations --
   (function () {
-    var elements = document.querySelectorAll('.fade_up, .fade_in, .zoom_in');
+    var elements = document.querySelectorAll('.fade_up, .fade_down, .fade_in, .zoom_in');
     if (!elements.length) return;
 
     if ('IntersectionObserver' in window) {
@@ -90,46 +90,37 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // -- Swiper: Project sliders (for project1-single and similar pages) --
   if (typeof Swiper !== 'undefined') {
-    // Single-service image slider
-    var singleServiceEl = document.querySelector('.single-service-slider');
+    // Single-service image slider (used on office-cleaning, house-cleaning, janitorial pages)
+    var singleServiceEl = document.querySelector('.singleServicesSlider');
     if (singleServiceEl) {
-      new Swiper('.single-service-slider', {
+      new Swiper('.singleServicesSlider', {
         loop: true,
         speed: 600,
-        autoplay: { delay: 4000, disableOnInteraction: false },
-        pagination: { el: '.single-service-pagination', clickable: true }
+        autoplay: { delay: 4000, disableOnInteraction: false }
       });
     }
 
-    // Project slider
-    var projectSliderEl = document.querySelector('.project-slider');
-    if (projectSliderEl) {
-      new Swiper('.project-slider', {
+    // Single-project slider (used on project1-single)
+    var singleProjectEl = document.querySelector('.singleProject2');
+    if (singleProjectEl) {
+      new Swiper('.singleProject2', {
         loop: true,
         speed: 600,
-        spaceBetween: 20,
-        slidesPerView: 1,
-        breakpoints: {
-          576:  { slidesPerView: 1.2 },
-          768:  { slidesPerView: 2 },
-          992:  { slidesPerView: 2.5 },
-          1200: { slidesPerView: 3 }
-        },
-        navigation: {
-          nextEl: '.project-next',
-          prevEl: '.project-prev'
-        }
+        autoplay: { delay: 4000, disableOnInteraction: false }
       });
     }
 
-    // Testimonial slider
-    var testimonialEl = document.querySelector('.testimonial-slider');
+    // Testimonial slider (used on team-details)
+    var testimonialEl = document.querySelector('.testimonialSlider');
     if (testimonialEl) {
-      new Swiper('.testimonial-slider', {
+      new Swiper('.testimonialSlider', {
         loop: true,
         speed: 600,
         autoplay: { delay: 5000, disableOnInteraction: false },
-        pagination: { el: '.testimonial-pagination', clickable: true }
+        navigation: {
+          nextEl: '.testimonial-next',
+          prevEl: '.testimonial-prev'
+        }
       });
     }
   }
