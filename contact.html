@@ -4,17 +4,26 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Bel Cleaning | Request a Quote or Site Visit</title>
-  <meta name="description" content="Contact our commercial cleaning team for quotes, walk‑throughs, or support. Flexible scheduling, insured and bonded crews, and transparent reporting."/>
-  <link rel="icon" type="image/x-icon" href="assets/images/svg/favicon.svg"/>
-  <link rel="stylesheet" href="assets/css/swap.css"/>
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="assets/css/swiper.min.css"/>
-  <link rel="stylesheet" href="assets/css/style.css"/>
-  <link rel="stylesheet" href="assets/css/media_query.css"/>
+  <meta name="description" content="Contact our commercial cleaning team for quotes, walk-throughs, or support. Flexible scheduling, insured and bonded crews, and transparent reporting."/>
+  <meta name="theme-color" content="#1a365d">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GV0SLHSP6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1GV0SLHSP6');
+  </script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/swap.css">
+  <link rel="stylesheet" href="/assets/css/swiper.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/media_query.css">
 </head>
 <body>
-  <!-- Preloader -->
-  <div class="page-loader">
+  <div class="page-loader" aria-hidden="true">
     <div class="leap-frog">
       <div class="leap-frog__dot"></div>
       <div class="leap-frog__dot"></div>
@@ -22,17 +31,15 @@
     </div>
   </div>
 
-  <!-- Header (Injected) -->
   <div id="site-header"></div>
 
-  <!-- Hero -->
   <section class="heroSection">
     <div class="container">
       <h1 class="img-header-text fade_down">Contact Us</h1>
-      <p class="mt-2 mb-0 fade_up">Request a quote, schedule a walk‑through, or ask a question.</p>
+      <p class="mt-2 mb-0 fade_up">Request a quote, schedule a walk-through, or ask a question.</p>
       <div class="breadcrumb-group fade_up">
-        <a href="index.html">HOME / </a>
-        <a href="contact.html">CONTACT</a>
+        <a href="/index.html">HOME / </a>
+        <a href="/contact.html">CONTACT</a>
       </div>
     </div>
   </section>
@@ -42,16 +49,16 @@
       <div class="row">
         <div class="col-lg-6">
           <p class="cap-text fade_in">get in touch</p>
-          <h2 class="sec-text fade_up">We’re Here to Help</h2>
-          <p class="sec-sub-text fade_up">Tell us about your facility, schedule, and goals. We’ll share a clear scope and a reliable start date.</p>
+          <h2 class="sec-text fade_up">We're Here to Help</h2>
+          <p class="sec-sub-text fade_up">Tell us about your facility, schedule, and goals. We'll share a clear scope and a reliable start date.</p>
           <ul class="checklist ps-3">
-            <li>Quotes within 24–48 hours (typical)</li>
-            <li>After‑hours and weekend availability</li>
-            <li>Multi‑site and multi‑tenant experience</li>
+            <li>Quotes within 24-48 hours (typical)</li>
+            <li>After-hours and weekend availability</li>
+            <li>Multi-site and multi-tenant experience</li>
           </ul>
           <div class="cta-band mt-3">
             <h3 class="mb-1">Prefer to talk?</h3>
-            <p class="mb-0">Call <a href="tel:+16363893148">636‑389‑3148</a> and we’ll help you right away.</p>
+            <p class="mb-0">Call <a href="tel:+16362455245">(636)-245-5245</a> and we'll help you right away.</p>
           </div>
         </div>
         <div class="col-lg-6">
@@ -86,36 +93,30 @@
       </div>
     </div>
   </section>
-    
+
   <section class="section-team" style="padding:80px 0;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center mb-4">
           <h2 class="sec-text">Ready to build your cleaning plan?</h2>
-          <p class="sec-sub-text">We’ll tailor the scope, schedule, and KPIs to your building.</p>
-          <a href="#" class="btn-quote quote-trigger">Get Free Quote
-            <img src="assets/images/svg/cross-arrow.svg" alt="cross-arrow">
+          <p class="sec-sub-text">We'll tailor the scope, schedule, and KPIs to your building.</p>
+          <a href="/get-quote.html" class="btn-quote quote-trigger">Get Free Quote
+            <img src="/assets/images/svg/cross-arrow.svg" alt="">
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer (Injected) -->
   <div id="site-footer"></div>
 
-  <!-- Back to top -->
-  <button class="bottom-top-button">↑</button>
-
-  <!-- Scripts -->
-  <script src="assets/javascript/jquery.js"></script>
-  <script src="assets/javascript/bootstrap.min.js"></script>
-  <script src="assets/javascript/swiper-bundle.min.js"></script>
-  <script src="assets/javascript/smooth-scroll.js"></script>
-  <script src="assets/javascript/gsap.js"></script>
-  <script src="assets/javascript/scrollMagic.min.js"></script>
-  <script src="assets/javascript/script.js"></script>
-  <!-- Inject header & footer -->
+  <!-- Vendor -->
+  <script src="/assets/javascript/jquery.js"></script>
+  <script src="/assets/javascript/swiper-bundle.min.js"></script>
+  <script src="/assets/javascript/gsap.js"></script>
+  <!-- Site core -->
   <script src="/assets/js/partials.js"></script>
+  <script src="/assets/js/page-init.js"></script>
+  <script src="/assets/js/app.js"></script>
 </body>
 </html>

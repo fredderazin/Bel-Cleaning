@@ -7,12 +7,11 @@
     <meta name="description" content="Request a free quote for professional commercial cleaning services. OSHA-compliant janitorial services in Missouri.">
     <meta name="theme-color" content="#1a365d">
     
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon-16x16.png">
-    <link rel="stylesheet" href="assets/css/swap.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/media_query.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon-16x16.png">
+    <link rel="stylesheet" href="/assets/css/swap.css">
+    <link rel="stylesheet" href="/assets/css/swiper.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/media_query.css">
 
     <style>
         /* ============================================
@@ -249,7 +248,7 @@
 
 <body>
     <!-- ====================================== Preloader ===================================== -->
-    <div class="page-loader">
+    <div class="page-loader" aria-hidden="true">
         <div class="leap-frog">
             <div class="leap-frog__dot"></div>
             <div class="leap-frog__dot"></div>
@@ -265,8 +264,8 @@
         <div class="container">
             <h1 class="img-header-text fade_down">Get Your Quote</h1>
             <div class="breadcrumb-group fade_up">
-                <a href="index.html">HOME</a> / 
-                <a href="get-quote.html">Get Your Quote</a>
+                <a href="/index.html">HOME</a> /
+                <a href="/get-quote.html">Get Your Quote</a>
             </div>
         </div>
     </section>
@@ -337,12 +336,12 @@
                     <div class="sidebar-widget fade_up">
                         <h3>Our Services</h3>
                         <ul>
-                            <li><a href="office-cleaning.html">Office & Facility Cleaning</a></li>
-                            <li><a href="warehouse-cleaning.html">Warehouse Cleaning</a></li>
-                            <li><a href="data-center-cleaning.html">Data Center Cleaning</a></li>
-                            <li><a href="healthcare-cleaning.html">Healthcare Cleaning</a></li>
-                            <li><a href="floor-cleaning.html">Floor Maintenance</a></li>
-                            <li><a href="construction-cleaning.html">Construction Cleaning</a></li>
+                            <li><a href="/office-cleaning.html">Office & Facility Cleaning</a></li>
+                            <li><a href="/warehouse-cleaning.html">Warehouse Cleaning</a></li>
+                            <li><a href="/data-center-cleaning.html">Data Center Cleaning</a></li>
+                            <li><a href="/healthcare-cleaning.html">Healthcare Cleaning</a></li>
+                            <li><a href="/floor-cleaning.html">Floor Maintenance</a></li>
+                            <li><a href="/construction-cleaning.html">Construction Cleaning</a></li>
                         </ul>
                     </div>
 
@@ -375,37 +374,37 @@
     <!-- ====================================== How It Works Section ===================================== -->
     <section class="section-how-to-work">
         <div class="container position-relative">
-            <img class="how-to-work-bg" src="assets/images/about/how-to-work-bg.png" alt="background">
+            <img class="how-to-work-bg" src="/assets/images/about/how-to-work-bg.png" alt="background">
             <p class="cap-text cost-cal position-relative fade_up">How It Works</p>
             <h2 class="sec-text fre pb-0 fade_up">Simple Steps To Get Started</h2>
             <div class="how-work-step-box">
                 <div class="how-work-step-box-sub fade_up">
                     <div class="how-to-work-circle">
-                        <img src="assets/images/svg/how-to-work-svg1.svg" alt="step-1">
+                        <img src="/assets/images/svg/how-to-work-svg1.svg" alt="step-1">
                     </div>
                     <h3>Submit Your Quote</h3>
                     <p class="fessional send-info">Fill out the form above with your cleaning requirements and facility details.</p>
                 </div>
                 <div class="how-work-step-box-sub how-to-work-arrow">
                     <div>
-                        <img src="assets/images/svg/how-to-work-arrow.svg" alt="arrow">
+                        <img src="/assets/images/svg/how-to-work-arrow.svg" alt="arrow">
                     </div>
                 </div>
                 <div class="how-work-step-box-sub fade_up">
                     <div class="how-to-work-circle">
-                        <img src="assets/images/svg/how-to-work-svg2.svg" alt="step-2">
+                        <img src="/assets/images/svg/how-to-work-svg2.svg" alt="step-2">
                     </div>
                     <h3>Get Your Custom Quote</h3>
                     <p class="fessional send-info">We'll review your needs and provide a detailed, customized quote within 24 hours.</p>
                 </div>
                 <div class="how-work-step-box-sub how-to-work-arrow">
                     <div>
-                        <img src="assets/images/svg/how-to-work-arrow.svg" alt="arrow">
+                        <img src="/assets/images/svg/how-to-work-arrow.svg" alt="arrow">
                     </div>
                 </div>
                 <div class="how-work-step-box-sub fade_up">
                     <div class="how-to-work-circle">
-                        <img src="assets/images/svg/how-to-work-svg3.svg" alt="step-3">
+                        <img src="/assets/images/svg/how-to-work-svg3.svg" alt="step-3">
                     </div>
                     <h3>Schedule & Relax</h3>
                     <p class="fessional send-info">Approve your quote, set your schedule, and let our professional team handle the rest.</p>
@@ -417,12 +416,14 @@
     <!-- ====================================== Footer (Optimized) ===================================== -->
     <div id="site-footer"></div>
 
-    <!-- ====================== Scripts ======================= -->
-    <script src="assets/javascript/jquery.js"></script>
-    <script src="assets/javascript/bootstrap.min.js"></script>
-    <script src="assets/javascript/swiper-bundle.min.js"></script>
-    <script src="assets/javascript/smooth-scroll.js"></script>
+    <!-- Vendor -->
+    <script src="/assets/javascript/jquery.js"></script>
+    <script src="/assets/javascript/swiper-bundle.min.js"></script>
+    <script src="/assets/javascript/gsap.js"></script>
+    <!-- Site core -->
     <script src="/assets/js/partials.js"></script>
+    <script src="/assets/js/page-init.js"></script>
+    <script src="/assets/js/app.js"></script>
 
     <script>
         // ============================================

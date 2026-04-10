@@ -15,11 +15,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GV0SLHSP6"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1GV0SLHSP6');</script>
   <link rel="stylesheet" href="/assets/css/swap.css">
-  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  
   <link rel="stylesheet" href="/assets/css/swiper.min.css">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/media_query.css">
-  <link rel="stylesheet" href="/assets/css/page-animations.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
 :root{
@@ -583,18 +582,16 @@ body{padding-top:var(--nav-h)!important}
 
   </main>
 
-  <div id="site-footer" data-include="/assets/includes/footer.html"></div>
+  <div id="site-footer"></div>
 
+  <!-- Vendor -->
   <script src="/assets/javascript/jquery.js"></script>
-  <script src="/assets/javascript/bootstrap.min.js"></script>
-  <script src="/assets/javascript/smooth-scroll.js"></script>
+  <script src="/assets/javascript/swiper-bundle.min.js"></script>
+  <script src="/assets/javascript/gsap.js"></script>
+  <!-- Site core -->
   <script src="/assets/js/partials.js"></script>
   <script src="/assets/js/page-init.js"></script>
-  <script>
-    (function(){var l=document.querySelector('.page-loader');function h(){if(l)l.classList.add('hide');}if(document.readyState==='complete'){h();}else{window.addEventListener('load',h);}setTimeout(h,3000);})();
-    (function(){var els=document.querySelectorAll('.fade_up');if(!els.length||!('IntersectionObserver' in window))return;var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-visible');obs.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:0.08});els.forEach(function(el){obs.observe(el);});})();
-    document.querySelectorAll('a[href^="#"]').forEach(function(link){link.addEventListener('click',function(e){var t=document.querySelector(this.getAttribute('href'));if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-130,behavior:'smooth'});}});});
-  </script>
+  <script src="/assets/js/app.js"></script>
 
 </body>
 </html>

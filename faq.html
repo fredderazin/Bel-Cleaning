@@ -5,17 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cleaning Solution</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/svg/favicon.svg">
-    <link rel="stylesheet" href="assets/css/swap.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/media_query.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/svg/favicon.svg">
+    <link rel="stylesheet" href="/assets/css/swap.css">
+    <link rel="stylesheet" href="/assets/css/swiper.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/media_query.css">
+    <style>
+      .faq-item { border-bottom: 1px solid #e0e0e0; }
+      .faq-question { width: 100%; text-align: left; background: none; border: none; padding: 1.2rem 0; font-size: 1.1rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+      .faq-arrow { transition: transform 0.3s; }
+      .faq-item.open .faq-arrow { transform: rotate(180deg); }
+      .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+      .faq-item.open .faq-answer { max-height: 500px; }
+    </style>
 </head>
 
 <body>
     <!-- ====================================== Preloader ===================================== -->
-    <div class="page-loader">
+    <div class="page-loader" aria-hidden="true">
         <div class="leap-frog">
             <div class="leap-frog__dot"></div>
             <div class="leap-frog__dot"></div>
@@ -30,8 +37,8 @@
         <div class="container">
             <h1 class="img-header-text fade_down">FAQs</h1>
             <div class="breadcrumb-group fade_up">
-                <a href="index-slider.html">HOME / </a>
-                <a href="faq.html">FAQs</a>
+                <a href="/index.html">HOME / </a>
+                <a href="/faq.html">FAQs</a>
             </div>
         </div>
     </section>
@@ -42,107 +49,45 @@
                 <div class="col-xxl-6 col-xl-6 col-lg-6">
                     <p class="cap-text fade_in">EXPLORE THE FEATURES</p>
                     <h2 class="sec-text fade_up pb-0">Few Of The Problems We Solve</h2>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    What are the most common Cleaning materials?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras
-                                    ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt.
-                                    Augue neque gravida in fermentum et sollicitudin.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    How long does a Cleaning last?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras
-                                    ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt.
-                                    Augue neque gravida in fermentum et sollicitudin.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    What causes Cleaning leaks?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras
-                                    ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt.
-                                    Augue neque gravida in fermentum et sollicitudin.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Can I Cleaning myself?
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras
-                                    ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt.
-                                    Augue neque gravida in fermentum et sollicitudin.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    What services do architects provide?
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras
-                                    ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt.
-                                    Augue neque gravida in fermentum et sollicitudin.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingSix">
-                                <button class="accordion-button mb-0 collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    Can A Handyman Do Cleaning Work?
-                                </button>
-                            </h2>
-                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras
-                                    ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt.
-                                    Augue neque gravida in fermentum et sollicitudin.
-                                </div>
-                            </div>
-                        </div>
+                    <div class="faq-item">
+                      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                        What are the most common Cleaning materials? <span class="faq-arrow">&#9662;</span>
+                      </button>
+                      <div class="faq-answer"><p>Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt. Augue neque gravida in fermentum et sollicitudin.</p></div>
+                    </div>
+                    <div class="faq-item">
+                      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                        How long does a Cleaning last? <span class="faq-arrow">&#9662;</span>
+                      </button>
+                      <div class="faq-answer"><p>Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt. Augue neque gravida in fermentum et sollicitudin.</p></div>
+                    </div>
+                    <div class="faq-item">
+                      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                        What causes Cleaning leaks? <span class="faq-arrow">&#9662;</span>
+                      </button>
+                      <div class="faq-answer"><p>Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt. Augue neque gravida in fermentum et sollicitudin.</p></div>
+                    </div>
+                    <div class="faq-item">
+                      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                        Can I Cleaning myself? <span class="faq-arrow">&#9662;</span>
+                      </button>
+                      <div class="faq-answer"><p>Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt. Augue neque gravida in fermentum et sollicitudin.</p></div>
+                    </div>
+                    <div class="faq-item">
+                      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                        What services do architects provide? <span class="faq-arrow">&#9662;</span>
+                      </button>
+                      <div class="faq-answer"><p>Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt. Augue neque gravida in fermentum et sollicitudin.</p></div>
+                    </div>
+                    <div class="faq-item">
+                      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+                        Can A Handyman Do Cleaning Work? <span class="faq-arrow">&#9662;</span>
+                      </button>
+                      <div class="faq-answer"><p>Donec massa sapien faucibus et molestie ac. Sed blandit libero volutpat sed cras ornare arcu. Vulputate mi sit amet mauris. Integer enim neque volutpat ac tincidunt. Augue neque gravida in fermentum et sollicitudin.</p></div>
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 pulm-multi-main">
-                    <img class="pulm-multi" src="assets/images/faq/girl-img.png" alt="girl-img">
+                    <img class="pulm-multi" src="/assets/images/faq/girl-img.png" alt="girl-img">
                 </div>
             </div>
         </div>
@@ -155,9 +100,9 @@
             <div class="container">
                 <div class="row home-blog-row">
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
-                        <a href="blog-details1.html" class="blog-box-main zoom_in">
+                        <a href="/blog-details1.html" class="blog-box-main zoom_in">
                             <div class="blog-img-main">
-                                <img class="blog-img" src="assets/images/blog/blog-img1.jpg" alt="blog-img1">
+                                <img class="blog-img" src="/assets/images/blog/blog-img1.jpg" alt="blog-img1">
                                 <h3 class="blog-date">20 FEB 2025</h3>
                             </div>
                             <div class="blog-containe-main">
@@ -168,9 +113,9 @@
                         </a>
                     </div>
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
-                        <a href="blog-details2.html" class="blog-box-main zoom_in">
+                        <a href="/blog-details2.html" class="blog-box-main zoom_in">
                             <div class="blog-img-main">
-                                <img class="blog-img" src="assets/images/blog/blog-img2.jpg" alt="blog-img2">
+                                <img class="blog-img" src="/assets/images/blog/blog-img2.jpg" alt="blog-img2">
                                 <h3 class="blog-date">15 FEB 2025</h3>
                             </div>
                             <div class="blog-containe-main">
@@ -181,9 +126,9 @@
                         </a>
                     </div>
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
-                        <a href="blog-details3.html" class="blog-box-main zoom_in">
+                        <a href="/blog-details3.html" class="blog-box-main zoom_in">
                             <div class="blog-img-main">
-                                <img class="blog-img" src="assets/images/blog/blog-img3.jpg" alt="blog-img3">
+                                <img class="blog-img" src="/assets/images/blog/blog-img3.jpg" alt="blog-img3">
                                 <h3 class="blog-date">10 FEB 2025</h3>
                             </div>
                             <div class="blog-containe-main">
@@ -240,7 +185,7 @@
                                 <div class="input-main">
                                     <div class="wrapper">
                                         <div class="formDropDown">Choose from list
-                                            <img class="arrow-icon-form" src="assets/images/svg/dropdown-arrow.svg"
+                                            <img class="arrow-icon-form" src="/assets/images/svg/dropdown-arrow.svg"
                                                 alt="arrow-icon-form">
                                         </div>
                                         <div class="position-relative">
@@ -264,7 +209,7 @@
                         </div>
                         <div class="get-cost-estimate send-main-btn">
                             <a href="#" class="btn-quote">Send Us Your Mail
-                                <img src="assets/images/svg/cross-arrow.svg" alt="cross-arrow">
+                                <img src="/assets/images/svg/cross-arrow.svg" alt="cross-arrow">
                             </a>
                         </div>
                     </div>
@@ -274,14 +219,14 @@
     </section>
     <!-- ====================================== Footer Section ===================================== -->
     <div id="site-footer"></div>
-    <!-- ====================== Bottom To Top Button ======================= -->
-    <button class="bottom-top-button">↑</button>
-    <script src="assets/javascript/jquery.js"></script>
-    <script src="assets/javascript/bootstrap.min.js"></script>
-    <script src="assets/javascript/swiper-bundle.min.js"></script>
-    <script src="assets/javascript/smooth-scroll.js"></script>
-    <script src="assets/javascript/script.js"></script>
-  <script src="/assets/js/partials.js"></script>
+    <!-- Vendor -->
+    <script src="/assets/javascript/jquery.js"></script>
+    <script src="/assets/javascript/swiper-bundle.min.js"></script>
+    <script src="/assets/javascript/gsap.js"></script>
+    <!-- Site core -->
+    <script src="/assets/js/partials.js"></script>
+    <script src="/assets/js/page-init.js"></script>
+    <script src="/assets/js/app.js"></script>
 </body>
 
 </html>

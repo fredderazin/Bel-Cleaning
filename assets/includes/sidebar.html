@@ -1,0 +1,74 @@
+<!-- ================================================
+     SIDEBAR PARTIAL
+     Path: /assets/includes/sidebar.html
+     Loaded by: partials.js → #site-sidebar
+================================================ -->
+
+<div class="services-list-box zoom_in">
+  <h2 class="all-service-text">Our Services</h2>
+  <div class="roofing-services-list-main" id="sidebar-service-links">
+    <a href="/office-cleaning.html" class="service-list-arow-main">
+      <p>Office &amp; Facility Cleaning</p>
+      <img src="/assets/images/svg/cross-arrow.svg" alt="" aria-hidden="true">
+    </a>
+    <a href="/warehouse-cleaning.html" class="service-list-arow-main">
+      <p>Warehouse Cleaning</p>
+      <img src="/assets/images/svg/cross-arrow.svg" alt="" aria-hidden="true">
+    </a>
+    <a href="/data-center-cleaning.html" class="service-list-arow-main">
+      <p>Data Center Cleaning</p>
+      <img src="/assets/images/svg/cross-arrow.svg" alt="" aria-hidden="true">
+    </a>
+    <a href="/healthcare-cleaning.html" class="service-list-arow-main">
+      <p>Healthcare Cleaning</p>
+      <img src="/assets/images/svg/cross-arrow.svg" alt="" aria-hidden="true">
+    </a>
+    <a href="/floor-cleaning.html" class="service-list-arow-main">
+      <p>Floor Cleaning &amp; Maintenance</p>
+      <img src="/assets/images/svg/cross-arrow.svg" alt="" aria-hidden="true">
+    </a>
+    <a href="/construction-cleaning.html" class="service-list-arow-main mb-0">
+      <p>Construction Cleaning</p>
+      <img src="/assets/images/svg/cross-arrow.svg" alt="" aria-hidden="true">
+    </a>
+  </div>
+</div>
+
+<div class="card-adds-main zoom_in">
+  <div class="adds-details-main">
+    <img class="adds-img-home w-100" src="/assets/images/team/belcleaning-finndia.svg" alt="Special offer">
+    <img class="shape-img" src="/assets/images/house-cleaning/download.png" alt="">
+    <h3>Get 10% Off Your First Office Clean</h3>
+    <a href="/contact.html" class="btn-quote">Contact Us
+      <img src="/assets/images/svg/cross-arrow.svg" alt="" aria-hidden="true">
+    </a>
+  </div>
+</div>
+
+<div class="documents-box zoom_in">
+  <a href="#" class="brochure-main">
+    <div class="brochure">
+      <img src="/assets/images/svg/brochure.svg" alt="">
+    </div>
+    <h3>Office Cleaning Checklist.doc</h3>
+  </a>
+  <a href="#" class="brochure-main mb-0">
+    <div class="brochure">
+      <img src="/assets/images/svg/brochure2.svg" alt="">
+    </div>
+    <h3>Janitorial Service Overview.pdf</h3>
+  </a>
+</div>
+
+<script>
+  // Auto-highlight active service in sidebar
+  (function () {
+    var path = window.location.pathname;
+    var links = document.querySelectorAll('#sidebar-service-links a');
+    links.forEach(function (a) {
+      if (path.indexOf(a.getAttribute('href')) !== -1) {
+        a.classList.add('active');
+      }
+    });
+  })();
+</script>

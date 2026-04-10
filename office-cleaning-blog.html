@@ -5,16 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Office Cleaning Checklist: Daily, Weekly, Monthly</title>
   <meta name="description" content="Build a practical office cleaning checklist to reduce complaints: daily tasks, weekly details, and monthly deep cleans."/>
-  <link rel="icon" type="image/x-icon" href="assets/images/svg/favicon.svg"/>
-  <link rel="stylesheet" href="assets/css/swap.css"/>
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="assets/css/swiper.min.css"/>
-  <link rel="stylesheet" href="assets/css/style.css"/>
-  <link rel="stylesheet" href="assets/css/media_query.css"/>
+  <meta name="theme-color" content="#1a365d">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GV0SLHSP6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1GV0SLHSP6');
+  </script>
+  
+  <link rel="stylesheet" href="/assets/css/swap.css">
+  
+  <link rel="stylesheet" href="/assets/css/swiper.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/media_query.css">
 </head>
 <body>
   <!-- Preloader -->
-  <div class="page-loader">
+  <div class="page-loader" aria-hidden="true">
     <div class="leap-frog">
       <div class="leap-frog__dot"></div>
       <div class="leap-frog__dot"></div>
@@ -55,18 +65,12 @@
   <!-- Footer (Injected) -->
   <div id="site-footer"></div>
 
-  <!-- Back to top -->
-  <button class="bottom-top-button">↑</button>
 
   <!-- Scripts -->
-  <script src="assets/javascript/jquery.js"></script>
-  <script src="assets/javascript/bootstrap.min.js"></script>
-  <script src="assets/javascript/swiper-bundle.min.js"></script>
-  <script src="assets/javascript/smooth-scroll.js"></script>
-  <script src="assets/javascript/gsap.js"></script>
-  <script src="assets/javascript/scrollMagic.min.js"></script>
-  <script src="assets/javascript/script.js"></script>
-  <!-- Inject header & footer -->
-  <script src="/assets/js/partials.js"></script>
+  <!-- Vendor -->
+  <script src="/assets/javascript/jquery.js"></script>
+  <!-- Site core -->
+  <script src="/assets/js/page-init.js"></script>
+  <script src="/assets/js/app.js"></script>
 </body>
 </html>
