@@ -13,13 +13,14 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // -- Intersection Observer – fade/zoom animations --
   (function () {
-    var elements = document.querySelectorAll('.fade_up, .fade_down, .fade_in, .zoom_in');
+    var elements = document.querySelectorAll('.fade_up, .fade_down, .fade_in, .fade_left, .fade_right, .zoom_in, .zoom_out, .flip_left, .flip_right, .flip_up, .flip_down');
     if (!elements.length) return;
 
     if ('IntersectionObserver' in window) {
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
+            entry.target.classList.add('show');
             entry.target.classList.add('is-visible');
             observer.unobserve(entry.target);
           }
@@ -35,6 +36,7 @@ window.addEventListener('DOMContentLoaded', function () {
       });
     } else {
       elements.forEach(function (el) {
+        el.classList.add('show');
         el.classList.add('is-visible');
       });
     }

@@ -163,22 +163,60 @@ button {
         transform: translateX(0) rotate(0deg);
     }
 }
-/*-----------------------[ 3. Scroll Animation CSS ]------------------------*/
+/*-----------------------[ 3.Whole Page scroll Aniamtion CSS ]------------------------*/
 .fade_up,
 .fade_down,
-.fade_in,
-.zoom_in {
+.zoom_in,
+.zoom_out {
     opacity: 0;
-    transform: translateY(16px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-    will-change: opacity, transform;
+    transition: all 2s;
+}
+.fade_up {
+    transform: translateY(-100%);
 }
 .fade_down {
-    transform: translateY(-16px);
+    transform: translateY(100%);
 }
+.zoom_in {
+    transform: scale(0.5);
+}
+.zoom_out {
+    transform: scale(1.5);
+}
+.fade_right {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+.fade_left {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 2s;
+}
+.flip_left {
+    opacity: 0;
+    transform: perspective(400px) rotateY(-90deg);
+    transition: all 2s;
+}
+.flip_right {
+    opacity: 0;
+    transform: perspective(400px) rotateY(90deg);
+    transition: all 2s;
+}
+.flip_up {
+    opacity: 0;
+    transform: perspective(400px) rotateX(-90deg);
+    transition: all 2s;
+}
+.flip_down {
+    opacity: 0;
+    transform: perspective(400px) rotateX(90deg);
+    transition: all 2s;
+}
+.show,
 .is-visible {
     opacity: 1 !important;
-    transform: none !important;
+    transform: translateY(0) scale(1) !important;
 }
 /*-----------------------[ 4.Button CSS ]------------------------*/
 .btn-quote {
@@ -2677,25 +2715,6 @@ button.bottom-top-button {
     background: #F5F6F7;
 }
 
-/* Header rendering fixes */
-.header {
-  position: sticky; top: 0; left: 0; right: 0;
-  z-index: 1000; background: #fff;
-}
-.header .logo img { max-height: 76px; width: auto; display: block; }
-.hamburger { background: transparent; border: 0; display: flex; align-items: center; }
-.hamburger .close-icon { display: none; }
-.nav.open ~ .hamburger .menu-icon { display: none; }
-.nav.open ~ .hamburger .close-icon { display: inline-block; }
-
-.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.4); opacity: 0; visibility: hidden; transition: .2s; z-index: 999; }
-.overlay.show { opacity: 1; visibility: visible; }
-
-/* Make sure dropdowns are above hero videos/images */
-.nav, .submenu { z-index: 1001; }
-
-/* Prevent layout shift if hero has absolute/bg video */
-.heroSection, .hero-mini { position: relative; z-index: 0; }
 
 /* ============================================================
    MERGED FROM page-animations.css
